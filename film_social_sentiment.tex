@@ -1,0 +1,43 @@
+\documentclass[sigconf]{acmart}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{amsthm}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{xspace}
+\graphicspath{{./graphs/}}
+
+\renewcommand{\arraystretch}{1.3}
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+\newcommand{\system}{FKAP\xspace}
+
+\title{Modern Social Media Based Film Data Analyse: A Comprehensive Case Study Related With NLP and DL}
+
+\begin{document}
+\maketitle
+
+% ------------------------ intro -------------------
+\input{introduce.tex}
+% -------------------------platform--------------------
+\input{overview.tex}
+%-------heterogeneous data integration and analysis-------
+\input{analysis.tex}
+% ------------------------ sentiment -------------------
+\input{sentiment.tex}
+% ------------------------ impact -------------------
+\input{impact.tex}
+% ------------------------ predicting -------------------
+\input{predicting.tex}
+% ------------------------ hin -------------------
+\input{hin.tex}
+
+\subsection{Co-star Relationship Prediction}
+
+
+\section{Conclusion}
+
+% --------------- biblio ---------------
+%\bibliographystyle{ACM-Reference-Format}
+%\bibliography{sample-bibliography}
+\end{document} 
