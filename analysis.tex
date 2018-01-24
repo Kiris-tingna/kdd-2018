@@ -1,4 +1,5 @@
 \section{Heterogeneous data integration and analysis}
+\label{sec:analyse}
 \subsection{Data standardization}
 An obvious phenomenon is that the box office of the movie has significant difference with the year and type. In order to eliminate these effects, we define the box office score to measure the box office quality of a movie. Given the box office of a movie $bo$ and its movie type set $T = {T_1,T_2,...,T_k}$ and release Year $y$, the box score is $boxscore=\frac{1}{|T|}\sum_{t\in T}\frac{log_2bo}{maxbox_{y,t}}$,where $maxbox$ is defined as $max(log_2(boset)_{year=y,type=t})$, which $boset$ is a set of boxoffice.\\
 Similarly, due to the difference of movie types, the original movie ratings can not accurately describe the word of mouth of the movie. We evaluate the word of mouth score according to the min-max method. Given the word of mouth a movie $wm$ and its movie type set $T = {T_1,T_2,...,T_k}$, the word of mouth score is $wms=\frac{1}{|T|}\sum_{t\in T}\frac{wm-min(wms_t)}{max(wms_t)-min(wms_t)}$, where $wmt$ the set of the word of mouth of movies where type is $t$.

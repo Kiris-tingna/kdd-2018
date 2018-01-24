@@ -69,14 +69,21 @@ In this section, we discuss method choosing alternative actors for casting agent
   \hline
   Type & Path instance & Meta-path \\
   \hline
-  I(\emph{AMA})& Andy-$M_1$-Sara & Actor-Movie-Actor  \\
+  I(\emph{AMA})& Andy-$M_1$-Sara & \tabincell{c}{Actor-\\Movie-Actor}  \\
   \hline
-  II(\emph{AMTMA}) & \tabincell{c}{John-$M_2$-Comedy-$M_3$-Sara\\Ben-$M_4$-War-$M_3$-Sara\\Drew-$M_5$-Dracula-$M_2$-John} & \tabincell{c}{Actor-Movie-\\Type-Movie-Actor} \\
+  II(\emph{AMTMA}) & \tabincell{c}{John-$M_2$-Comedy-$M_3$-Sara\\Ben-$M_4$-War-$M_3$-Sara\\Drew-$M_5$-Dracula-$M_2$-John} & \tabincell{c}{Actor-Movie-\\Type-Movie\\-Actor} \\
   \hline
-  III(\emph{AMDMA}) & \tabincell{c}{Diana-$M_6$-Spielberg-$M_1$-Andy\\John-$M_2$-Luc Besson-$M_5$-Drew\\Sara-$M_3$-Tom Tykwer-$M_5$-Drew} & \tabincell{c}{Actor-Movie-\\Director-Movie-Actor}\\
+  III(\emph{AMDMA}) & \tabincell{c}{Diana-$M_6$-Spielberg-$M_1$-Andy\\John-$M_2$-Luc Besson-$M_5$-Drew\\Sara-$M_3$-Tom Tykwer-$M_5$-Drew} & \tabincell{c}{Actor-Movie-\\Director-Movie\\-Actor}\\
   \hline
   \end{tabular}
   \caption{Different Types of meta-path in MHIN}\label{tab:metapath}
 \end{table}
 
+Denote actors $a_1$ and $a_2$ then $p_{a_1 \rightsquigarrow a_2}$ is a path instance between $a_1$ and $a_2$, $p_{a_1 \rightsquigarrow a_1}$ is a path instance between $a_1$ and $a_1$, $p_{a_2 \rightsquigarrow a_2}$ is a path instance between $a_2$ and $a_2$. We then get similarity between $a_1$ and $a_2$ by calculate
 
+\begin{equation}
+  s(a_1,a_2) = \frac{2 \times |\left\{p_{a_1 \rightsquigarrow a_2}: p_{a_1 \rightsquigarrow a_2} \in \mathcal{P} \right\}|}{|\left\{p_{a_1 \rightsquigarrow a_1}: p_{a_1 \rightsquigarrow a_1} \in \mathcal{P} \right\}| + |\left\{p_{a_2 \rightsquigarrow a_2}: p_{a_2 \rightsquigarrow a_2} \in \mathcal{P} \right\}|}
+\end{equation}
+
+Base on this measure of actors, we can not only know similarities but also get multi metrics that reflect how actors link with others. Query a specific actor $a_i$and then return a recommend actor list $r_{a_i}$ that ordered by similarities. Investors can determine the scope of film plan or prepare backup candidate for chief actor. In \system we also analyse different types of meta path instances for providing comprehensive alternative information for other actors.
+ 

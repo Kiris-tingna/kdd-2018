@@ -1,4 +1,5 @@
-\section{Sentiment Analyse}
+\section{Practical Sentiment Analyse}
+\label{sec:sent}
 \par The main purpose of sentiment analyse is to discover views and opinions diversity of different targets in films which reflect what attract audience watching the movie. The sample dataset in this area are review corpus $ R =\{r_1, r_2, \dots, r_n\}$ and each $r_i$ has film name  $f_i$ it belonging to, time point $time_i$ , scores towards this film $s_i$ and user $u_i$ who scores. These attributes of reviews are discrete (has domain specific value) and many sentences in it contribute to the whole sentiment of this single review. Since reviews are spread in social media platform such as twitter or micro-blogs, the sentences are limited and review of movie are usually enough short. Thus, many phenomenon occurred on short texts or natural language add difficulties when analysing the sentiments of targets (e.g. Rhetoric, metaphor, proverb and nicknames). Unlike many works focus on proceed in sentence-level document-level and time-period level step by step, we try to figure out the sentiment to a specific actors or director(leading creator of this film). A useful prior knowledge in reviews together with reviewers' rating score or stars made by user is evaluation score of specific film. We make the best of this knowledge to enlarge our sentiment words database because user usually behave consistent sentiment to same target.
 
 \subsection{Named Entities Recognition}
@@ -38,18 +39,20 @@ Potential comment targets mapping dictionary $A$, $P$\\
 \end{algorithm}
 
 \begin{table*}[!t]
+\begin{center}
   \centering
-  \begin{tabular}{|l|l|l|l|l|l|l|}
+  \begin{tabular}{|c|c|c|c|c|c|c|}
     \hline
     Review No. & Contents & Referred & Film No.& time point  & Scores \\
     \hline
-    1 & \tabincell{l}{Yang Yang's hard temperament is enough to \\ hold up the role} & Yang Yang & Ten great II of peach blossom & 2016-07-25T13:36:12.000+0800 & 10\\
-    2 & \tabincell{l}{Yang Yang's acting is really embarrassing, \\ Crystal Liu is OK} & Yang Yang, Crystal Liu& Ten great II of peach blossom & 2017-08-07T20:18:55.000+0800 & 5\\
-    3 & \tabincell{l}{The story of embarrassment, feeling Yehua \\did not love Baiqian} & Yang Yang, Crystal Liu &  Ten great II of peach blossom & 2017-08-07T21:09:07.000+0800 & 2\\
-    $r_i$ & s & s & $f_i$ & $time_i$  & $s_i$ \\
+    1 & \tabincell{l}{Yang Yang's hard temperament\\ is enough to hold up the role} & Yang Yang & Ten great II of peach blossom & 2016-07-25T13:36:12.000+0800 & 10\\
+    2 & \tabincell{l}{Yang Yang's acting is really \\ embarrassing, Crystal Liu is OK} & \tabincell{l}{Yang Yang,\\ Crystal Liu}& Ten great II of peach blossom & 2017-08-07T20:18:55.000+0800 & 5\\
+    3 & \tabincell{l}{The story of embarrassment,\\ feeling Yehua did not love Baiqian} & \tabincell{l}{Yang Yang,\\ Crystal Liu} &  Ten great II of peach blossom & 2017-08-07T21:09:07.000+0800 & 2\\
+    $r_i$ & \dots & \dots & $f_i$ & $time_i$  & $s_i$ \\
     \hline
   \end{tabular}
   \caption{review targets after named entities recognition}
+\end{center}
 \label{tab:summary}
 \end{table*}
 
