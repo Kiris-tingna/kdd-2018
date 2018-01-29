@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.21)  28 JAN 2018 16:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.21)  29 JAN 2018 14:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1228,6 +1228,13 @@ File: ./graphs/screenshot3.png Graphic file (type png)
 <use ./graphs/screenshot3.png>
 Package pdftex.def Info: ./graphs/screenshot3.png used on input line 10.
 (pdftex.def)             Requested size: 144.54pt x 76.78313pt.
+
+<./graphs/screenshot4.png, id=116, 1826.825pt x 974.64125pt>
+File: ./graphs/screenshot4.png Graphic file (type png)
+
+<use ./graphs/screenshot4.png>
+Package pdftex.def Info: ./graphs/screenshot4.png used on input line 12.
+(pdftex.def)             Requested size: 144.54pt x 77.11032pt.
 Package epstopdf Info: Source file: <./graphs/overview.eps>
 (epstopdf)                    date: 2018-01-25 10:23:47
 (epstopdf)                    size: 2230398 bytes
@@ -1236,15 +1243,15 @@ Package epstopdf Info: Source file: <./graphs/overview.eps>
 (epstopdf)                    size: 39496 bytes
 (epstopdf)             Command: <repstopdf --outfile=./graphs/overview-eps-conv
 erted-to.pdf ./graphs/overview.eps>
-(epstopdf)             \includegraphics on input line 16.
+(epstopdf)             \includegraphics on input line 18.
 Package epstopdf Info: Output file is already uptodate.
 
-<./graphs/overview-eps-converted-to.pdf, id=116, 499.8675pt x 539.01375pt>
+<./graphs/overview-eps-converted-to.pdf, id=118, 499.8675pt x 539.01375pt>
 File: ./graphs/overview-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./graphs/overview-eps-converted-to.pdf>
 Package pdftex.def Info: ./graphs/overview-eps-converted-to.pdf used on input l
-ine 16.
+ine 18.
 (pdftex.def)             Requested size: 192.91872pt x 208.02675pt.
 ) (./analysis.tex [1.1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updma
 p/pdftex.map}
@@ -1256,9 +1263,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
 ) (./sentiment.tex
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 5.
+(Font)              scaled to size 9.0pt on input line 4.
  [2.2 <./graphs/screenshot1.png> <./graphs/screenshot2.png> <./graphs/screensho
-t3.png> <./graphs/overview-eps-converted-to.pdf>]
+t3.png> <./graphs/screenshot4.png> <./graphs/overview-eps-converted-to.pdf>]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 17.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
@@ -1304,6 +1311,7 @@ File: ./graphs/bi-lstm-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./graphs/bi-lstm-eps-converted-to.pdf used on input li
 ne 87.
 (pdftex.def)             Requested size: 241.14749pt x 168.47469pt.
+ [4.4 <./graphs/bi-lstm-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./graphs/sentiment_1.eps>
 (epstopdf)                    date: 2018-01-03 14:59:06
 (epstopdf)                    size: 1519578 bytes
@@ -1313,15 +1321,15 @@ Package epstopdf Info: Source file: <./graphs/sentiment_1.eps>
 (epstopdf)                    size: 35443 bytes
 (epstopdf)             Command: <repstopdf --outfile=./graphs/sentiment_1-eps-c
 onverted-to.pdf ./graphs/sentiment_1.eps>
-(epstopdf)             \includegraphics on input line 116.
+(epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
 
-<./graphs/sentiment_1-eps-converted-to.pdf, id=200, 571.13374pt x 133.49875pt>
+<./graphs/sentiment_1-eps-converted-to.pdf, id=224, 571.13374pt x 133.49875pt>
 File: ./graphs/sentiment_1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./graphs/sentiment_1-eps-converted-to.pdf>
 Package pdftex.def Info: ./graphs/sentiment_1-eps-converted-to.pdf used on inpu
-t line 116.
+t line 120.
 (pdftex.def)             Requested size: 241.14749pt x 56.36649pt.
 Package epstopdf Info: Source file: <./graphs/sentiment_2.eps>
 (epstopdf)                    date: 2018-01-03 15:23:38
@@ -1332,22 +1340,21 @@ Package epstopdf Info: Source file: <./graphs/sentiment_2.eps>
 (epstopdf)                    size: 35087 bytes
 (epstopdf)             Command: <repstopdf --outfile=./graphs/sentiment_2-eps-c
 onverted-to.pdf ./graphs/sentiment_2.eps>
-(epstopdf)             \includegraphics on input line 118.
+(epstopdf)             \includegraphics on input line 122.
 Package epstopdf Info: Output file is already uptodate.
 
-<./graphs/sentiment_2-eps-converted-to.pdf, id=201, 571.13374pt x 133.49875pt>
+<./graphs/sentiment_2-eps-converted-to.pdf, id=225, 571.13374pt x 133.49875pt>
 File: ./graphs/sentiment_2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./graphs/sentiment_2-eps-converted-to.pdf>
 Package pdftex.def Info: ./graphs/sentiment_2-eps-converted-to.pdf used on inpu
-t line 118.
+t line 122.
 (pdftex.def)             Requested size: 241.14749pt x 56.36649pt.
 ) (./impact.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[4.4 <./graphs/bi-lstm-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./graphs/impact.eps>
 (epstopdf)                    date: 2018-01-22 09:34:59
 (epstopdf)                    size: 58991 bytes
@@ -1358,8 +1365,7 @@ Package epstopdf Info: Source file: <./graphs/impact.eps>
 ted-to.pdf ./graphs/impact.eps>
 (epstopdf)             \includegraphics on input line 8.
 Package epstopdf Info: Output file is already uptodate.
-
-<./graphs/impact-eps-converted-to.pdf, id=225, 510.90875pt x 209.78375pt>
+<./graphs/impact-eps-converted-to.pdf, id=226, 510.90875pt x 209.78375pt>
 File: ./graphs/impact-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./graphs/impact-eps-converted-to.pdf>
@@ -1398,7 +1404,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
-
+[5.5 <./graphs/sentiment_1-eps-converted-to.pdf> <./graphs/sentiment_2-eps-conv
+erted-to.pdf> <./graphs/impact-eps-converted-to.pdf>]
 Overfull \hbox (15.49782pt too wide) in paragraph at lines 19--20
 []\OT1/LinuxLibertineT-TLF/m/n/9 (-20) We de-fine the DIR (Dy-namic Im-pact Ra-
 tio) as $\OML/nxlmi/m/it/9 DIR[]\LMS/ntxsy/m/n/9 ¹\OML/nxlmi/m/it/9 c\LMS/ntxsy
@@ -1417,14 +1424,13 @@ f>
 (epstopdf)             \includegraphics on input line 27.
 Package epstopdf Info: Output file is already uptodate.
 
-<./graphs/dynamicimpact-eps-converted-to.pdf, id=226, 1547.7825pt x 833.1125pt>
+<./graphs/dynamicimpact-eps-converted-to.pdf, id=263, 1547.7825pt x 833.1125pt>
 File: ./graphs/dynamicimpact-eps-converted-to.pdf Graphic file (type pdf)
 <use ./graphs/dynamicimpact-eps-converted-to.pdf>
 Package pdftex.def Info: ./graphs/dynamicimpact-eps-converted-to.pdf used on in
 put line 27.
 (pdftex.def)             Requested size: 192.91872pt x 103.83371pt.
-) (./predicting.tex [5.5 <./graphs/sentiment_1-eps-converted-to.pdf> <./graphs/
-sentiment_2-eps-converted-to.pdf> <./graphs/impact-eps-converted-to.pdf>]
+) (./predicting.tex
 Package epstopdf Info: Source file: <./graphs/boxpredict.eps>
 (epstopdf)                    date: 2018-01-26 09:50:19
 (epstopdf)                    size: 162450 bytes
@@ -1433,18 +1439,18 @@ Package epstopdf Info: Source file: <./graphs/boxpredict.eps>
 (epstopdf)                    size: 56553 bytes
 (epstopdf)             Command: <repstopdf --outfile=./graphs/boxpredict-eps-co
 nverted-to.pdf ./graphs/boxpredict.eps>
-(epstopdf)             \includegraphics on input line 30.
+(epstopdf)             \includegraphics on input line 34.
 Package epstopdf Info: Output file is already uptodate.
 
-<./graphs/boxpredict-eps-converted-to.pdf, id=261, 1109.14375pt x 482.80376pt>
+<./graphs/boxpredict-eps-converted-to.pdf, id=264, 1109.14375pt x 482.80376pt>
 File: ./graphs/boxpredict-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./graphs/boxpredict-eps-converted-to.pdf>
 Package pdftex.def Info: ./graphs/boxpredict-eps-converted-to.pdf used on input
- line 30.
+ line 34.
 (pdftex.def)             Requested size: 192.91872pt x 83.97623pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
@@ -1461,7 +1467,7 @@ d-to.pdf ./graphs/mhin.eps>
 (epstopdf)             \includegraphics on input line 6.
 Package epstopdf Info: Output file is already uptodate.
 
-<./graphs/mhin-eps-converted-to.pdf, id=301, 496.85625pt x 361.35pt>
+<./graphs/mhin-eps-converted-to.pdf, id=304, 496.85625pt x 361.35pt>
 File: ./graphs/mhin-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./graphs/mhin-eps-converted-to.pdf>
@@ -1500,11 +1506,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
  ) 
 Here is how much of TeX's memory you used:
- 17802 strings out of 492995
- 268224 string characters out of 6132704
- 382440 words of memory out of 5000000
- 20489 multiletter control sequences out of 15000+600000
- 106397 words of font info for 326 fonts, out of 8000000 for 9000
+ 17805 strings out of 492995
+ 268289 string characters out of 6132704
+ 385440 words of memory out of 5000000
+ 20493 multiletter control sequences out of 15000+600000
+ 106124 words of font info for 324 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  60i,15n,94p,1580b,560s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/newtx/libertinealt.enc}{/
@@ -1532,10 +1538,10 @@ dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2017/texmf-dist/fon
 ts/type1/public/newtx/zxlr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
 public/newtx/zxlri.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/n
 ewtx/zxlzi.pfb>
-Output written on film_social_sentiment.pdf (8 pages, 1369680 bytes).
+Output written on film_social_sentiment.pdf (8 pages, 1494731 bytes).
 PDF statistics:
- 436 PDF objects out of 1000 (max. 8388607)
- 355 compressed objects within 4 object streams
- 105 named destinations out of 1000 (max. 500000)
- 42752 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 440 PDF objects out of 1000 (max. 8388607)
+ 357 compressed objects within 4 object streams
+ 106 named destinations out of 1000 (max. 500000)
+ 42757 words of extra memory for PDF output out of 42996 (max. 10000000)
 

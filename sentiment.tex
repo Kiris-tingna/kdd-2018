@@ -106,7 +106,11 @@ Potential comment targets mapping dictionary $A$, $P$\\
 \par In this section, we mainly care about how to predict latent sentiment transform. Obviously, we quantify explicit sentiment towards special actors or directors. Although all information came from overall corpus, we can not deny that different sentiment exist in different time period during movie life. Audience's sentiments have trends and always behave dynamically. Previous work concentrate on sentiment polarity and we extend it by capture dynamic time-period sentiment. Denote a time period range from $time_r = [time_i, time_j]$, we capture review statistical sum $R_{f_i}$ of each movie $f_i$ at time period $time_r$ from $Pos$ and $Neg$. Then we get different target $j$'s positive or negative sentiment transformation at different $time_r$.
 
 \begin{equation}
-    Sentiment^j_i (time_r) = \frac{|pos^j_i-neg^j_i \ in \ time_r|}{R_{f_i}}
+    SentimentPos^j_i (time_r) = 10\cdot \frac{|pos^j_i \ in \ time_r|}{R_{f_i}}
+\end{equation}
+
+\begin{equation}
+    SentimentNeg^j_i (time_r) = 10\cdot \frac{|neg^j_i \ in \ time_r|}{R_{f_i}}
 \end{equation}
 
 \par Dynamic sentiment on leader creator shows how people transform their attention from different targets in movies. We pick out most interesting part (actor) from them and label it the main factor which mainly contribute to the box-office of specific film. The trend analyse is shown in Figure \ref{fig:sentiment}.
