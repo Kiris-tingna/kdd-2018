@@ -11,8 +11,9 @@ where $maxbox$ is defined as $max(log_2(boset)_{year=y,type=t})$, which $boset$ 
 ws=\frac{1}{|T|}\sum_{t\in T}\frac{wm-min(wms_t)}{max(wms_t)-min(wms_t)}
 \end{equation}
 where $wmt$ the set of the word of mouth of movies where type is $t$.
-\subsection{The Analysis of Actors and Directors}
-We use $bos,bov,wms,wmv$ to reflect the average box office performance, the box office performance fluctuation, the average word-of-mouth performance and the volatility of word-of-mouth performance so that we can depicte the performance of the historical movie to provide guidance for the selection of the corner.
+\subsection{Persona of famous actors and directors}
+We provide persona analysis of famous actors and directors which is shown in Figure 1(d). The box office value of a famous director or actor is one of the most important parts of the box office. Famous Actors(directors) are the main performers(directors) over 10 movies or won the film excellent actor(director) award or have more than three million followers in social networks. Portraying the box office of famous actors or directors in historical movies can help us analyze their value and Volatility.
+\par We use $bos,bov,wms,wmv$ to reflect the average box office performance, the box office performance fluctuation, the average word-of-mouth performance and the volatility of word-of-mouth performance so that we can depicte the performance of the historical movie to provide guidance for the selection of the corner.
 \begin{subequations}
 \begin{align}
 bos &=  \frac{1}{N}\sum_{i\in N}bs_i\\
@@ -21,7 +22,5 @@ wms &=  \frac{1}{N}\sum_{i\in N}ws_i\\
 wmv &= \frac{1}{N-1}\sum_{i\in N}(ws_i-wms)^2
 \end{align}
 \end{subequations}
-\subsection{Name ambiguity elimination}
-Name ambiguity is a special case of identity uncertainty where one person can be referenced by multiple name variations in different situations or even share the same name with other people.
-
-
+\subsection{Named Entity Disambiguation}
+Named entity disambiguation is one of the most important problems in natural language processing. In named entity category, person name has strong ambiguity so that person name disambiguation is the most difficult category. However, because the project inquiry is a well-known director and famous actor, and Chinese name and English name, makes the probability of Fijian phenomenon is greatly reduced, in this collection of 2371 directors and 801 actors, one by one, through the Baidu encyclopedia content, movie actor information, can be a good solution the same problem.
