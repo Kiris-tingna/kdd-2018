@@ -115,6 +115,27 @@ Potential comment targets mapping dictionary $A$, $P$\\
 
 \par Dynamic sentiment on leader creator shows how people transform their attention from different targets in movies. We pick out most interesting part (actor) from them and label it the main factor which mainly contribute to the box-office of specific film. The trend analyse is shown in Figure \ref{fig:sentiment}.
 
+\par To measure the smoothness of the sentiment time series, we use slice window to capture the changes in the emotional inclination of the reviews. We Denote upper bound and lower bound of a day $r$,$UBP^j_i (r)$, $LBP^j_i (r)$,$UBL^j_i (r)$ and $LBN^j_i (r)$. 
+
+\begin{equation}
+    UBP^j_i (r) = mean^j_i (time_r)+\lambda \cdot std^j_i (time_r)
+\end{equation}
+
+\begin{equation}
+    LBP^j_i (r) = mean^j_i (time_r)-\lambda \cdot std^j_i (time_r)
+\end{equation}
+
+where 
+\begin{equation}
+    mean^j_i (r) = \frac{1}{2d}\sum_{k=r-d}^{r+d}SentimentPos^j_i (time_k)
+\end{equation}
+
+\begin{equation}
+    std^j_i (r) = \frac{1}{2d}\sum_{k=r-d}^{r+d}(SentimentPos^j_i (time_k)- mean^j_i (time_r))^2
+\end{equation}
+
+\par Because the time series follows Gaussian Distribution, and we set $\lambda=2$, means that confidence intervals is 0.0456, 
+
 \begin{figure}[!htbp]
 \centering
 \subfloat[Period Sentiment Trend: Change of sentiment in a specific film]{\includegraphics[width=\columnwidth]{sentiment_1.eps}}
