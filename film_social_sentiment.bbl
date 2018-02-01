@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{0}
+\begin{thebibliography}{9}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -36,5 +36,114 @@
 \providecommand\bibinfo[2]{#2}
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Chen, Xu, He, and Wang}{Chen
+  et~al\mbox{.}}{2017}]%
+        {chen2017improving}
+\bibfield{author}{\bibinfo{person}{Tao Chen}, \bibinfo{person}{Ruifeng Xu},
+  \bibinfo{person}{Yulan He}, {and} \bibinfo{person}{Xuan Wang}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Improving sentiment analysis via sentence type
+  classification using BiLSTM-CRF and CNN}.
+\newblock \bibinfo{journal}{{\em Expert Systems With Applications\/}}
+  \bibinfo{volume}{72} (\bibinfo{year}{2017}), \bibinfo{pages}{221--230}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Dong, Wei, Tan, Tang, Zhou, and Xu}{Dong
+  et~al\mbox{.}}{2014}]%
+        {dong2014adaptive}
+\bibfield{author}{\bibinfo{person}{Li Dong}, \bibinfo{person}{Furu Wei},
+  \bibinfo{person}{Chuanqi Tan}, \bibinfo{person}{Duyu Tang},
+  \bibinfo{person}{Ming Zhou}, {and} \bibinfo{person}{Ke Xu}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Adaptive Recursive Neural Network for
+  Target-dependent Twitter Sentiment Classification}.
+\newblock  (\bibinfo{year}{2014}), \bibinfo{pages}{49--54}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Katiyar and Cardie}{Katiyar and
+  Cardie}{2016}]%
+        {katiyar2016investigating}
+\bibfield{author}{\bibinfo{person}{Arzoo Katiyar} {and} \bibinfo{person}{Claire
+  Cardie}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Investigating LSTMs for Joint Extraction of Opinion
+  Entities and Relations.}
+\newblock  (\bibinfo{year}{2016}), \bibinfo{pages}{919--929}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Li and Hovy}{Li and Hovy}{2014}]%
+        {li2014sentiment}
+\bibfield{author}{\bibinfo{person}{Jiwei Li} {and} \bibinfo{person}{Eduard~H
+  Hovy}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Sentiment Analysis on the People's Daily}.
+\newblock  (\bibinfo{year}{2014}), \bibinfo{pages}{467--476}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Sun and Han}{Sun and Han}{2013}]%
+        {sun2013meta-path-based}
+\bibfield{author}{\bibinfo{person}{Yizhou Sun} {and} \bibinfo{person}{Jiawei
+  Han}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{Meta-Path-Based Search and Mining in Heterogeneous
+  Information Networks}.
+\newblock \bibinfo{journal}{{\em Tsinghua Science \& Technology\/}}
+  \bibinfo{volume}{18}, \bibinfo{number}{4} (\bibinfo{year}{2013}),
+  \bibinfo{pages}{329--338}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Sun, Han, Aggarwal, and Chawla}{Sun
+  et~al\mbox{.}}{2012}]%
+        {sun2012when}
+\bibfield{author}{\bibinfo{person}{Yizhou Sun}, \bibinfo{person}{Jiawei Han},
+  \bibinfo{person}{Charu~C Aggarwal}, {and} \bibinfo{person}{Nitesh~V Chawla}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{When will it happen?: relationship prediction in
+  heterogeneous information networks}.
+\newblock  (\bibinfo{year}{2012}), \bibinfo{pages}{663--672}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Sun, Han, Yan, Yu, and Wu}{Sun
+  et~al\mbox{.}}{2011}]%
+        {sun2011pathsim:}
+\bibfield{author}{\bibinfo{person}{Yizhou Sun}, \bibinfo{person}{Jiawei Han},
+  \bibinfo{person}{Xifeng Yan}, \bibinfo{person}{Philip~S Yu}, {and}
+  \bibinfo{person}{Tianyi Wu}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Pathsim: Meta path-based top-k similarity search in
+  heterogeneous information networks}.
+\newblock \bibinfo{journal}{{\em Proceedings of The Vldb Endowment\/}}
+  \bibinfo{volume}{4} (\bibinfo{year}{2011}), \bibinfo{pages}{992--1003}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Sun, Han, Zhao, Yin, Cheng, and Wu}{Sun
+  et~al\mbox{.}}{2009}]%
+        {sun2009rankclus:}
+\bibfield{author}{\bibinfo{person}{Yizhou Sun}, \bibinfo{person}{Jiawei Han},
+  \bibinfo{person}{Peixiang Zhao}, \bibinfo{person}{Zhijun Yin},
+  \bibinfo{person}{Hong Cheng}, {and} \bibinfo{person}{Tianyi Wu}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{RankClus: integrating clustering with ranking for
+  heterogeneous information network analysis}.
+\newblock  (\bibinfo{year}{2009}), \bibinfo{pages}{565--576}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Tang, Qin, Feng, and Liu}{Tang
+  et~al\mbox{.}}{2015}]%
+        {tang2015target-dependent}
+\bibfield{author}{\bibinfo{person}{Duyu Tang}, \bibinfo{person}{Bing Qin},
+  \bibinfo{person}{Xiaocheng Feng}, {and} \bibinfo{person}{Ting Liu}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Target-Dependent Sentiment Classification with Long
+  Short Term Memory}.
+\newblock \bibinfo{journal}{{\em arXiv: Computation and Language\/}}
+  (\bibinfo{year}{2015}).
+\newblock
+
 
 \end{thebibliography}

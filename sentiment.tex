@@ -1,6 +1,6 @@
 \section{Practical Sentiment Analyse}
 \label{sec:sent}
-\par The main purpose of sentiment analyse is to discover views and opinions diversity of different targets in films which reflect what attract audience watching the movie. The sample dataset in this area are review corpus $ R =\{r_1, r_2, \dots, r_n\}$ and each $r_i$ has film name  $f_i$ it belonging to, time point $time_i$ , scores towards this film $s_i$ and user $u_i$ who scores. These attributes of reviews are discrete (has domain specific value) and many sentences in it contribute to the whole sentiment of this single review. Since reviews are spread in social media platform such as twitter or micro-blogs, the sentences are limited and review of movie are usually enough short. Thus, many phenomenon occurred on short texts or natural language add difficulties when analysing the sentiments of targets (e.g. Rhetoric, metaphor, proverb and nicknames). Unlike many works focus on proceed in sentence-level document-level and time-period level step by step, we try to figure out the sentiment to a specific actors or director(leading creator of this film). A useful prior knowledge in reviews together with reviewers' rating score or stars made by user is evaluation score of specific film. We make the best of this knowledge to enlarge our sentiment words database because user usually behave consistent sentiment to same target.
+\par The main purpose of sentiment analyse is to discover views and opinions diversity \cite{katiyar2016investigating} of different targets in films which reflect what attract audience watching the movie. The sample dataset in this area are review corpus $ R =\{r_1, r_2, \dots, r_n\}$ and each $r_i$ has film name  $f_i$ it belonging to, time point $time_i$ , scores towards this film $s_i$ and user $u_i$ who scores. These attributes of reviews are discrete (has domain specific value) and many sentences in it contribute to the whole sentiment of this single review. Since reviews are spread in social media platform such as twitter or micro-blogs, the sentences are limited and review of movie are usually enough short. Thus, many phenomenon occurred on short texts or natural language add difficulties when analysing the sentiments of targets (e.g. Rhetoric, metaphor, proverb and nicknames)\cite{li2014sentiment}. Unlike many works focus on proceed in sentence-level document-level and time-period level step by step\cite{chen2017improving}, we try to figure out the sentiment to a specific actors or director(leading creator of this film)\cite{dong2014adaptive}. A useful prior knowledge in reviews together with reviewers' rating score or stars made by user is evaluation score of specific film. We make the best of this knowledge to enlarge our sentiment words database because user usually behave consistent sentiment to same target.
 
 \subsection{Named Entities Recognition}
 \par If we want to know sentiments behind human expression, targets that people are taking about should be identified firstly. Here we concentrate on comment target about leader creators in films. The main challenging is the nicknames for actors and directors.
@@ -8,7 +8,7 @@
 \begin{equation}
     J(\theta)= \arg\min_{\theta} \frac{1}{n}\sum_{i=1}^{n}loss(f(x_i;\theta), y_i)
 \end{equation}
-recurrent neutral networks such as \emph{LSTM}, \emph{BidirectionalLSTM}, \emph{BidirectionalLSTM+CRF} have been proved to be state-of-art structures. They consider both long time and short terms information and find tags with maximum possibility for sequence labeling. However, previous machine learning approaches need huge domain training data, while it is hardly to label these social media corpus accurately which are full of informality and flexibility. Especially actors get constantly evolving new roles in various films as time goes by, we hope find a simple and efficient way that recognize most of the comment targets in films reviews.
+recurrent neutral networks such as \emph{LSTM}, \emph{BidirectionalLSTM}, \emph{BidirectionalLSTM+CRF} \cite{chen2017improving} have been proved to be state-of-art structures. They consider both long time and short terms information and find tags with maximum possibility for sequence labeling. However, previous machine learning approaches need huge domain training data, while it is hardly to label these social media corpus accurately which are full of informality and flexibility. Especially actors get constantly evolving new roles in various films as time goes by, we hope find a simple and efficient way that recognize most of the comment targets in films reviews.
 \par \textbf{Fast and adaptive approach}. In order to mining entities in linear time, we apply key word matching for leader creators in films. Online knowledge database which store film meta information can be strong support providing comprehensive and dependable analysis. Focused crawling technology based on web linkage contribute to construction of prior knowledge of \textbf{actors}, \textbf{roles} and \textbf{directors}.
 
 \begin{algorithm}[htb]
@@ -80,7 +80,7 @@ Potential comment targets mapping dictionary $A$, $P$\\
 
 \par Since we have to retrieve \emph{Neg} and \emph{Pos} shown in Equation (\ref{eq:neg}) and (\ref{eq:pos}), we take training data $R_p$ with scores larger than 9 for positive sentiment and $R_n$ which scores lower than 3 for negative one. We exclude reviews $R_{ambi}$ which scores range between 4 and 8 that might be ambiguous over sentiment in training phrase. Instead, $R_p$ and $R_n$ show more concentrated sentiments in words. We train a classifier on $R_p$ and $R_n$, then we split $R$ with context window according referred target in each review. Reviews segments cover target's contextual information which construct sentiment corpus $Neg$ and $Pos$ towards specific targets are objectives for sentiment classifier. We mainly apply it on targets segments split from $R_{ambi}$. Finally, we get comprehensive sentiment polarity on targets segments in $R$.
 
-\par Lexicon based sentiment analysis is constrained by sentence structure, latent word meaning and confused word features. We introduce bidirectional long short term memory (\emph{Bi-LSTM}) neural network for end-to-end sentiment classification and automated feature learning as figure \ref{fig:lstm} shows.
+\par Lexicon based sentiment analysis is constrained by sentence structure, latent word meaning and confused word features. We introduce bidirectional long short term memory (\emph{Bi-LSTM}) neural network \cite{tang2015target-dependent,chen2017improving} for end-to-end sentiment classification and automated feature learning as figure \ref{fig:lstm} shows.
 
 \begin{figure}[!htbp]
 \centering
@@ -89,7 +89,7 @@ Potential comment targets mapping dictionary $A$, $P$\\
 \label{fig:lstm}
 \end{figure}
 
-\par Specially, word sequence are represented as a low dimensional , continuous and valued vector. It is called word embedding and we use pre-trained vectors so as to make better use of semantic and grammatical associations. Assume each $d$-dimension vector $ W_i = \mathbb{R}^{d \times |V|}$ for $i$th word in whole vocabulary $V$. Targets words with $L_r$ length cover $tw = \{W_r, W_{r+1}, \dots, W_{r+L_r-1}\}$ and context words $cw = \{W_{r-L_w}, \dots, W_{r-1}, W_{r+L_r}, \dots, W_{r+L_r+L_w-1}\}$ with window length $L_w$ surround corresponding targets words $tw$. \emph{BiLSTM} maps word vectors to fix-length sentence vector by recursively transformation above vectors of previous time step $h_{t-1}$. Cells for \emph{BiLSTM} in Figure \ref{fig:lstm} contains neural gates: input gates, forget gates, and output gates which adaptively remember input vector, forget history, and generate output vector. We add softmax layer to output sentiment of sentence vector which cover hidden representation of vectors for specific target segment as Figure 1 shows. Core calculation in LSTM cells are listed in bellow equations. $\odot$ is element-wise multiplication and $\sigma$ is sigmoid activation, $W_i, W_f, W_o, b_i, b_f, b_o$ are parameters for input, forget and output gates.
+\par Specially, word sequence are represented as a low dimensional , continuous and valued vector. It is called word embedding and we use pre-trained vectors so as to make better use of semantic and grammatical associations. Assume each $d$-dimension vector $ W_i = \mathbb{R}^{d \times |V|}$ for $i$th word in whole vocabulary $V$. Targets words with $L_r$ length cover $tw = \{W_r, W_{r+1}, \dots, W_{r+L_r-1}\}$ and context words $cw = \{W_{r-L_w}, \dots, W_{r-1}, W_{r+L_r}, \dots, W_{r+L_r+L_w-1}\}$ with window length $L_w$ surround corresponding targets words $tw$. \emph{BiLSTM} maps word vectors to fix-length sentence vector by recursively transformation above vectors of previous time step $h_{t-1}$. Cells for \emph{BiLSTM} in Figure \ref{fig:lstm} contains neural gates: input gates, forget gates, and output gates which adaptively remember input vector, forget history, and generate output vector. We add softmax layer to output sentiment of sentence vector which cover hidden representation of vectors for specific target segment as Figure 1 shows. Core calculation in LSTM cells are listed in bellow equations. \cite{} $\odot$ is element-wise multiplication and $\sigma$ is sigmoid activation, $W_i, W_f, W_o, b_i, b_f, b_o$ are parameters for input, forget and output gates.
 \begin{subequations}
 \begin{align}
   i_t &= \sigma(W_i \bullet [h_{t-1};w_t] + b_i)\\
@@ -115,7 +115,7 @@ Potential comment targets mapping dictionary $A$, $P$\\
 
 \par Dynamic sentiment on leader creator shows how people transform their attention from different targets in movies. We pick out most interesting part (actor) from them and label it the main factor which mainly contribute to the box-office of specific film. The trend analyse is shown in Figure \ref{fig:sentiment}.
 
-\par To measure the smoothness of the sentiment time series, we use slice window to capture the changes in the emotional inclination of the reviews. We Denote upper bound and lower bound of a day $r$,$UBP^j_i (r)$, $LBP^j_i (r)$,$UBL^j_i (r)$ and $LBN^j_i (r)$. 
+\par To measure the smoothness of the sentiment time series, we use slice window to capture the changes in the emotional inclination of the reviews. We Denote upper bound and lower bound of a day $r$,$UBP^j_i (r)$, $LBP^j_i (r)$,$UBL^j_i (r)$ and $LBN^j_i (r)$.
 
 \begin{equation}
     UBP^j_i (r) = mean^j_i (time_r)+\lambda \cdot std^j_i (time_r)
@@ -125,7 +125,7 @@ Potential comment targets mapping dictionary $A$, $P$\\
     LBP^j_i (r) = mean^j_i (time_r)-\lambda \cdot std^j_i (time_r)
 \end{equation}
 
-where 
+where
 \begin{equation}
     mean^j_i (r) = \frac{1}{2d}\sum_{k=r-d}^{r+d}SentimentPos^j_i (time_k)
 \end{equation}
@@ -134,7 +134,7 @@ where
     std^j_i (r) = \frac{1}{2d}\sum_{k=r-d}^{r+d}(SentimentPos^j_i (time_k)- mean^j_i (time_r))^2
 \end{equation}
 
-\par Because the time series follows Gaussian Distribution, and we set $\lambda=2$, means that confidence intervals is 0.0456, 
+\par Because the time series follows Gaussian Distribution, and we set $\lambda=2$, means that confidence intervals is 0.0456,
 
 \begin{figure}[!htbp]
 \centering

@@ -1,5 +1,17 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: film_social_sentiment.aux
 The style file: ACM-Reference-Format.bst
-I found no \citation commands---while reading file film_social_sentiment.aux
 Database file #1: fkap.bib
-(There was 1 error message)
+Warning--I didn't find a database entry for ""
+Warning--no journal in dong2014adaptive
+Warning--no number and no volume in dong2014adaptive
+Warning--no journal in katiyar2016investigating
+Warning--no number and no volume in katiyar2016investigating
+Warning--no journal in li2014sentiment
+Warning--no number and no volume in li2014sentiment
+Warning--no journal in sun2012when
+Warning--no number and no volume in sun2012when
+Warning--no journal in sun2009rankclus:
+Warning--no number and no volume in sun2009rankclus:
+Warning--no number and no volume in tang2015target-dependent
+Warning--page numbers missing in both pages and numpages fields in tang2015target-dependent
+(There were 13 warnings)
