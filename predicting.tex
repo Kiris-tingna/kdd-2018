@@ -41,51 +41,35 @@ In the past prediction of box office, we usually only forecast the overall box o
 and $week_i$ The box office in the $ith$ week. With these additional messages obtained from audience and current box office, the results we predict are more similiar to real box office, shown in Table 3.
 \begin{table*}[!htbp]
 \centering
-\begin{tabular}{|c|c|c|c|c|c|}
-\hline
-\multicolumn{6}{|c|}{First Week}\\
-\hline
-Metric&SVR&RF&GBDT&LR&LASSO\\
-\hline
-MSE& \textbf{0.09393658}& 0.2683265 & 0.6354384 & 1.09512416 & 0.74275155\\
-\hline
-R2score & \textbf{0.63495534} &  -1.8019927	& -2.1466284&-3.5673886&-2.0977628\\
-\hline
-EVC&\textbf{0.6082226}&0.4194317&0.20241852&-3.0608791&-0.9281806\\
-\hline
-\multicolumn{6}{|c|}{Second Week}\\
-\hline
-Metreic & SVR&RF&GBDT&LR&LASSO\\
-\hline
-MSE&0.2716661&0.3192046&0.51210881&0.51052539&\textbf{0.05284060}\\
-\hline
-R2score&0.0693802&-1.0037243&-0.78307969&-0.74885631&\textbf{0.81898915}\\
-\hline
-EVC&0.1977912&-0.1190541&-0.08409798&-0.69472796&\textbf{0.91647358}\\
-\hline
-\multicolumn{6}{|c|}{Third Week}\\
-\hline
-Metric&SVR&RF&GBDT&LR&LASSO\\
-\hline
-MSE&0.3949564&1.0082170&0.764787&0.73353798&\textbf{0.0896601506}\\
-\hline
-R2score&0.6605046&0.0296122&0.297479&0.369467937&\textbf{0.9229302356}\\
-\hline
-EVC&0.713641&0.0253357&0.611827&0.37283487&\textbf{0.9758343006}\\
-\hline
-\multicolumn{6}{|c|}{Forth Week}\\
-\hline
-Metric&SVR&RF&GBDT&LR&LASSO\\
-\hline
-MSE&0.745514&0.6839145&2.03964614&1.373235192&\textbf{0.5025655348}\\
-\hline
-R2score&0.573410&0.1461468&0.16642220&0.214224192&\textbf{0.7124281104}\\
-\hline
-EVC&0.63220&0.4586132&0.05054086&0.325419958&\textbf{0.7183931246}\\
-\hline
+\begin{tabular}{|c|c|c|c|c|c|c|}
+ \hline
+    \multicolumn{1}{|c|}{\textbf{}}&
+    \multicolumn{1}{|c|}{\textbf{\large Metric}}&
+    \multicolumn{5}{|c|}{\textbf{\large Model}} \\
+ \hline
+    Week & Metric & SVR &  RF &  GBDT &  LR & LASSO\\
+ \hline
+    \multirow{3}{*}{\begin{sideways}{First}\end{sideways}}
+    & MSE  & \textbf{0.09393658} &  0.2683265 & 0.6354384 & 1.09512416 & 0.74275155  \\
+    & R2score & \textbf{0.63495534} &  -1.8019927	& -2.1466284 & -3.5673886 & -2.0977628   \\
+    & EVC  & \textbf{0.6082226} & 0.4194317 & 0.20241852 & -3.0608791 & -0.9281806   \\
+ \hline
+     \multirow{3}{*}{\begin{sideways}{Second}\end{sideways}}
+    & MSE  & 0.2716661 & 0.3192046 & 0.51210881 & 0.51052539 & \textbf{0.05284060}  \\
+    & R2score & 0.0693802 & -1.0037243 & -0.78307969 & -0.74885631 & \textbf{0.81898915}   \\
+    & EVC  & 0.1977912 & -0.1190541 & -0.08409798 & -0.69472796 & \textbf{0.91647358}   \\
+ \hline
+     \multirow{3}{*}{\begin{sideways}{Third}\end{sideways}}
+    & MSE  & 0.3949564 &1.0082170 &0.764787 &0.73353798 &\textbf{0.0896601506}  \\
+    & R2score & 0.6605046 &0.0296122 &0.297479 &0.369467937 &\textbf{0.9229302356}   \\
+    & EVC  & 0.713641 &0.0253357 &0.611827 &0.37283487 &\textbf{0.9758343006}  \\
+ \hline
+      \multirow{3}{*}{\begin{sideways}{Forth}\end{sideways}}
+    & MSE  &0.745514&0.6839145&2.03964614&1.373235192&\textbf{0.5025655348}  \\
+    & R2score &0.573410&0.1461468&0.16642220&0.214224192&\textbf{0.7124281104}   \\
+    & EVC  &0.63220&0.4586132&0.05054086&0.325419958&\textbf{0.7183931246}  \\
+ \hline
 \end{tabular}
 \caption{Evaluation of Predicting Model}
 \label{tab:evalution}
 \end{table*}
-
-

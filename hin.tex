@@ -61,7 +61,7 @@ $K$ clusters of actors $A_i$ and rank of actor in each cluster \\
 
 
 \subsection{Alternative Actors}
-In this section, we discuss method choosing alternative actors for casting agents. The basic idea is measure similarity between actors. Since movie information network has been built, we then introduce meta path-based similarity framework for alternative actors.
+In this section, we discuss method choosing alternative actors for casting agents. The basic idea is measure similarity between actors. Since movie information network has been built, we then introduce meta path-based similarity framework for alternative actors. The example is show in table \ref{tab:metapath}.
 
 \begin{table}[!htb]
   \centering
@@ -76,7 +76,8 @@ In this section, we discuss method choosing alternative actors for casting agent
   III(\emph{AMDMA}) & \tabincell{c}{Diana-$M_6$-Spielberg-$M_1$-Andy\\John-$M_2$-Luc Besson-$M_5$-Drew\\Sara-$M_3$-Tom Tykwer-$M_5$-Drew} & \tabincell{c}{Actor-Movie-\\Director-Movie\\-Actor}\\
   \hline
   \end{tabular}
-  \caption{Different Types of meta-path in MHIN}\label{tab:metapath}
+  \caption{Different Types of meta-path in MHIN}
+  \label{tab:metapath}
 \end{table}
 
 Denote actors $a_1$ and $a_2$ then $p_{a_1 \rightsquigarrow a_2}$ is a path instance between $a_1$ and $a_2$, $p_{a_1 \rightsquigarrow a_1}$ is a path instance between $a_1$ and $a_1$, $p_{a_2 \rightsquigarrow a_2}$ is a path instance between $a_2$ and $a_2$. We then get similarity between $a_1$ and $a_2$ by calculate
