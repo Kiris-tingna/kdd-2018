@@ -116,6 +116,20 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{Gemser, Van~Oostrum, and Leenders}{Gemser
+  et~al\mbox{.}}{2007}]%
+        {gemser2007impact}
+\bibfield{author}{\bibinfo{person}{Gerda Gemser}, \bibinfo{person}{Martine
+  Van~Oostrum}, {and} \bibinfo{person}{Mark~AAM Leenders}.}
+  \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{The impact of film reviews on the box office
+  performance of art house versus mainstream motion pictures}.
+\newblock \bibinfo{journal}{{\em Journal of Cultural Economics\/}}
+  \bibinfo{volume}{31}, \bibinfo{number}{1} (\bibinfo{year}{2007}),
+  \bibinfo{pages}{43--63}.
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{Hunter, David, Smith, and Singh}{Hunter
   et~al\mbox{.}}{2016}]%
         {hunter2016predicting}
@@ -138,6 +152,20 @@
   reviews and Independent subspace method}.
 \newblock \bibinfo{journal}{{\em Information Sciences\/}}
   \bibinfo{volume}{372} (\bibinfo{year}{2016}), \bibinfo{pages}{608--624}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Joshi, Das, Gimpel, and Smith}{Joshi
+  et~al\mbox{.}}{2010}]%
+        {joshi2010movie}
+\bibfield{author}{\bibinfo{person}{Mahesh Joshi}, \bibinfo{person}{Dipanjan
+  Das}, \bibinfo{person}{Kevin Gimpel}, {and} \bibinfo{person}{Noah~A Smith}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Movie reviews and revenues: An experiment in text
+  regression}. In \bibinfo{booktitle}{{\em Human Language Technologies: The
+  2010 Annual Conference of the North American Chapter of the Association for
+  Computational Linguistics}}. Association for Computational Linguistics,
+  \bibinfo{pages}{293--296}.
 \newblock
 
 
@@ -224,6 +252,17 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{Panaligan and Chen}{Panaligan and
+  Chen}{2013}]%
+        {panaligan2013quantifying}
+\bibfield{author}{\bibinfo{person}{Reggie Panaligan} {and}
+  \bibinfo{person}{Andrea Chen}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{Quantifying movie magic with google search}.
+\newblock \bibinfo{journal}{{\em Google Whitepaper—Industry Perspectives+
+  User Insights\/}} (\bibinfo{year}{2013}).
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{Pang, Lee, et~al\mbox{.}}{Pang
   et~al\mbox{.}}{2008}]%
         {pang2008opinion}
@@ -233,6 +272,18 @@
 \newblock \bibinfo{journal}{{\em Foundations and Trends{\textregistered} in
   Information Retrieval\/}} \bibinfo{volume}{2}, \bibinfo{number}{1--2}
   (\bibinfo{year}{2008}), \bibinfo{pages}{1--135}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Sharda and Delen}{Sharda and Delen}{2006}]%
+        {sharda2006predicting}
+\bibfield{author}{\bibinfo{person}{Ramesh Sharda} {and} \bibinfo{person}{Dursun
+  Delen}.} \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{Predicting box-office success of motion pictures
+  with neural networks}.
+\newblock \bibinfo{journal}{{\em Expert Systems with Applications\/}}
+  \bibinfo{volume}{30}, \bibinfo{number}{2} (\bibinfo{year}{2006}),
+  \bibinfo{pages}{243--254}.
 \newblock
 
 

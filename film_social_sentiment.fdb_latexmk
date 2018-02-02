@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex film_social_sentiment"] 1517559811 "film_social_sentiment.aux" "film_social_sentiment.bbl" "film_social_sentiment" 1517559814
+["bibtex film_social_sentiment"] 1517568520 "film_social_sentiment.aux" "film_social_sentiment.bbl" "film_social_sentiment" 1517568523
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/acmart/ACM-Reference-Format.bst" 1493069147 93993 94d2174e63fb9cd866ec1d0b392ce46c ""
-  "film_social_sentiment.aux" 1517559813 13534 edbb7c7831bc549f5c0845de9a7b9269 ""
-  "fkap.bib" 1517536180 6301 2b707ccd87a9d5b22d58e174aa8be120 ""
+  "film_social_sentiment.aux" 1517568522 14048 298b2a6488485ca7c1d2537655d7e2a8 ""
+  "fkap.bib" 1517566731 7590 e94954e65b058e26f2aabf9d78bf64ef ""
   (generated)
   "film_social_sentiment.bbl"
   "film_social_sentiment.blg"
-["pdflatex"] 1517559811 "film_social_sentiment.tex" "film_social_sentiment.pdf" "film_social_sentiment" 1517559814
+["pdflatex"] 1517568520 "film_social_sentiment.tex" "film_social_sentiment.pdf" "film_social_sentiment" 1517568523
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_edcawa.enc" 1490133665 2833 ab571e969b0d4b8e87f8f63627b1db02 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_kijugd.enc" 1490133665 2822 11e839d2bbb939844844619b2cff7df6 ""
@@ -229,9 +229,9 @@
   "acmart.cls" 1517468197 72223 dd4f537c380e80587297e4a044dea96d ""
   "analysis.tex" 1517468197 2875 3258217a8cf1b9be61ce1c27ecfd07df ""
   "case.tex" 1517555292 4280 681c1a769cbeaaddd38183664e64d61e ""
-  "film_social_sentiment.aux" 1517559813 13534 edbb7c7831bc549f5c0845de9a7b9269 ""
-  "film_social_sentiment.bbl" 1517559811 13620 7e40a4af7d52df98bb0ad9241ffc7cc4 "bibtex film_social_sentiment"
-  "film_social_sentiment.out" 1517559813 5398 2ef2a0d210e73a6617b8bf15dc48b7ff ""
+  "film_social_sentiment.aux" 1517568522 14048 298b2a6488485ca7c1d2537655d7e2a8 ""
+  "film_social_sentiment.bbl" 1517568520 15846 ef8dd1210d803f039a209987ae4fec14 "bibtex film_social_sentiment"
+  "film_social_sentiment.out" 1517568522 5398 2ef2a0d210e73a6617b8bf15dc48b7ff ""
   "film_social_sentiment.tex" 1517558416 2802 b5da45aa60bfe6fee908d4babc831763 ""
   "graphs/bi-lstm.eps" 1517468197 2032746 37d93bd6f4058aec871dd008144fa9f6 ""
   "graphs/boxpredict.eps" 1517557164 2910774 77557ea2531953345537e57674c10c43 ""
@@ -250,13 +250,13 @@
   "graphs/sentiment_2.eps" 1517468197 1523214 5bd23ae79271f471810310c146d78c6f ""
   "hin.tex" 1517468197 7579 1818c165e05a0f9fb60d1708bdceee96 ""
   "impact.tex" 1517536558 5362 bf34a362fe83e529b8236606cbf70b02 ""
-  "introduce.tex" 1517559806 6462 69c9c25ea870f2a2c7b9d284798e8c47 ""
+  "introduce.tex" 1517568514 7354 3cd4303ecb32d1f1a829c6b531449834 ""
   "other.tex" 1517555292 3458 7b31f81d5aeb1fac1dace756ef083a6a ""
   "overview.tex" 1517491797 2449 c4601413aa17814359e20a782bb760d4 ""
   "predicting.tex" 1517492075 5211 cfe5f66a1b828b7ef8dd78f55c1569ad ""
   "sentiment.tex" 1517468197 14555 1918b00a539eb594187aa685d1d3d90f ""
   (generated)
-  "film_social_sentiment.log"
   "film_social_sentiment.aux"
-  "film_social_sentiment.out"
   "film_social_sentiment.pdf"
+  "film_social_sentiment.out"
+  "film_social_sentiment.log"
