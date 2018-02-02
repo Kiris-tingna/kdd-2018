@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{13}
+\begin{thebibliography}{00}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -37,6 +37,30 @@
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
 
+\bibitem[\protect\citeauthoryear{Asur and Huberman}{Asur and Huberman}{2010}]%
+        {asur2010predicting}
+\bibfield{author}{\bibinfo{person}{Sitaram Asur} {and}
+  \bibinfo{person}{Bernardo~A Huberman}.} \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Predicting the future with social media}. In
+  \bibinfo{booktitle}{{\em Proceedings of the 2010 IEEE/WIC/ACM International
+  Conference on Web Intelligence and Intelligent Agent Technology-Volume 01}}.
+  IEEE Computer Society, \bibinfo{pages}{492--499}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Basuroy, Chatterjee, and Ravid}{Basuroy
+  et~al\mbox{.}}{2003}]%
+        {basuroy2003critical}
+\bibfield{author}{\bibinfo{person}{Suman Basuroy}, \bibinfo{person}{Subimal
+  Chatterjee}, {and} \bibinfo{person}{S~Abraham Ravid}.}
+  \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{How critical are critical reviews? The box office
+  effects of film critics, star power, and budgets}.
+\newblock \bibinfo{journal}{{\em Journal of marketing\/}} \bibinfo{volume}{67},
+  \bibinfo{number}{4} (\bibinfo{year}{2003}), \bibinfo{pages}{103--117}.
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{Chen, Xu, He, and Wang}{Chen
   et~al\mbox{.}}{2017}]%
         {chen2017improving}
@@ -47,6 +71,35 @@
   classification using BiLSTM-CRF and CNN}.
 \newblock \bibinfo{journal}{{\em Expert Systems With Applications\/}}
   \bibinfo{volume}{72} (\bibinfo{year}{2017}), \bibinfo{pages}{221--230}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Craig, Greene, and Versaci}{Craig
+  et~al\mbox{.}}{2015}]%
+        {craig2015word}
+\bibfield{author}{\bibinfo{person}{C~Samuel Craig}, \bibinfo{person}{William~H
+  Greene}, {and} \bibinfo{person}{Anthony Versaci}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{E-word of mouth: early predictor of audience
+  engagement: how pre-release “E-WOM” drives box-office outcomes of
+  movies}.
+\newblock \bibinfo{journal}{{\em Journal of Advertising Research\/}}
+  \bibinfo{volume}{55}, \bibinfo{number}{1} (\bibinfo{year}{2015}),
+  \bibinfo{pages}{62--72}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Diao, Qiu, Wu, Smola, Jiang, and Wang}{Diao
+  et~al\mbox{.}}{2014}]%
+        {diao2014jointly}
+\bibfield{author}{\bibinfo{person}{Qiming Diao}, \bibinfo{person}{Minghui Qiu},
+  \bibinfo{person}{Chao-Yuan Wu}, \bibinfo{person}{Alexander~J Smola},
+  \bibinfo{person}{Jing Jiang}, {and} \bibinfo{person}{Chong Wang}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Jointly modeling aspects, ratings and sentiments
+  for movie recommendation (JMARS)}. In \bibinfo{booktitle}{{\em Proceedings of
+  the 20th ACM SIGKDD international conference on Knowledge discovery and data
+  mining}}. ACM, \bibinfo{pages}{193--202}.
 \newblock
 
 
@@ -112,6 +165,19 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{Kiritchenko, Zhu, and Mohammad}{Kiritchenko
+  et~al\mbox{.}}{2014}]%
+        {kiritchenko2014sentiment}
+\bibfield{author}{\bibinfo{person}{Svetlana Kiritchenko},
+  \bibinfo{person}{Xiaodan Zhu}, {and} \bibinfo{person}{Saif~M Mohammad}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Sentiment analysis of short informal texts}.
+\newblock \bibinfo{journal}{{\em Journal of Artificial Intelligence
+  Research\/}}  \bibinfo{volume}{50} (\bibinfo{year}{2014}),
+  \bibinfo{pages}{723--762}.
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{Li and Hovy}{Li and Hovy}{2014}]%
         {li2014sentiment}
 \bibfield{author}{\bibinfo{person}{Jiwei Li} {and} \bibinfo{person}{Eduard~H
@@ -128,6 +194,45 @@
   on box office revenue}.
 \newblock \bibinfo{journal}{{\em Journal of marketing\/}} \bibinfo{volume}{70},
   \bibinfo{number}{3} (\bibinfo{year}{2006}), \bibinfo{pages}{74--89}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Manek, Shenoy, Mohan, and Venugopal}{Manek
+  et~al\mbox{.}}{2017}]%
+        {manek2017aspect}
+\bibfield{author}{\bibinfo{person}{Asha~S Manek}, \bibinfo{person}{P~Deepa
+  Shenoy}, \bibinfo{person}{M~Chandra Mohan}, {and} \bibinfo{person}{KR
+  Venugopal}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Aspect term extraction for sentiment analysis in
+  large movie reviews using Gini Index feature selection method and SVM
+  classifier}.
+\newblock \bibinfo{journal}{{\em World wide web\/}} \bibinfo{volume}{20},
+  \bibinfo{number}{2} (\bibinfo{year}{2017}), \bibinfo{pages}{135--154}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Marshall, Dockendorff, and
+  Ib{\'a}{\~n}ez}{Marshall et~al\mbox{.}}{2013}]%
+        {marshall2013forecasting}
+\bibfield{author}{\bibinfo{person}{Pablo Marshall}, \bibinfo{person}{Monika
+  Dockendorff}, {and} \bibinfo{person}{Soledad Ib{\'a}{\~n}ez}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{A forecasting system for movie attendance}.
+\newblock \bibinfo{journal}{{\em Journal of Business Research\/}}
+  \bibinfo{volume}{66}, \bibinfo{number}{10} (\bibinfo{year}{2013}),
+  \bibinfo{pages}{1800--1806}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Pang, Lee, et~al\mbox{.}}{Pang
+  et~al\mbox{.}}{2008}]%
+        {pang2008opinion}
+\bibfield{author}{\bibinfo{person}{Bo Pang}, \bibinfo{person}{Lillian Lee},
+  {et~al\mbox{.}}} \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{Opinion mining and sentiment analysis}.
+\newblock \bibinfo{journal}{{\em Foundations and Trends{\textregistered} in
+  Information Retrieval\/}} \bibinfo{volume}{2}, \bibinfo{number}{1--2}
+  (\bibinfo{year}{2008}), \bibinfo{pages}{1--135}.
 \newblock
 
 
@@ -182,15 +287,27 @@
 
 
 \bibitem[\protect\citeauthoryear{Tang, Qin, Feng, and Liu}{Tang
-  et~al\mbox{.}}{2015}]%
+  et~al\mbox{.}}{2015a}]%
         {tang2015target-dependent}
 \bibfield{author}{\bibinfo{person}{Duyu Tang}, \bibinfo{person}{Bing Qin},
   \bibinfo{person}{Xiaocheng Feng}, {and} \bibinfo{person}{Ting Liu}.}
-  \bibinfo{year}{2015}\natexlab{}.
+  \bibinfo{year}{2015}\natexlab{a}.
 \newblock \showarticletitle{Target-Dependent Sentiment Classification with Long
   Short Term Memory}.
 \newblock \bibinfo{journal}{{\em arXiv: Computation and Language\/}}
   (\bibinfo{year}{2015}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Tang, Qin, Liu, and Yang}{Tang
+  et~al\mbox{.}}{2015b}]%
+        {tang2015user}
+\bibfield{author}{\bibinfo{person}{Duyu Tang}, \bibinfo{person}{Bing Qin},
+  \bibinfo{person}{Ting Liu}, {and} \bibinfo{person}{Yuekui Yang}.}
+  \bibinfo{year}{2015}\natexlab{b}.
+\newblock \showarticletitle{User Modeling with Neural Network for Review Rating
+  Prediction.}. In \bibinfo{booktitle}{{\em IJCAI}}.
+  \bibinfo{pages}{1340--1346}.
 \newblock
 
 

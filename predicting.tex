@@ -34,9 +34,9 @@ $year$ & The year that the movie came out\\
 \centering
 \includegraphics[width=0.8\columnwidth]{boxpredict.eps}
 \caption{Multi-stage box office prediction model}
-\label{fig:mhin}
+\label{fig:dyna}
 \end{figure}
-In the past prediction of box office, we usually only forecast the overall box office, but often ignored the movie's influence on movie box office due to the audience's attitude. Such as "wolf 2", the movie box office to be among the world's top 100, because in the release process, because the audience warmly, attracted the audience is not the original film (film series the fans, fans, like the kind of audience) to watch a movie, which leads to the box office continued to rise however, the traditional model is unable to capture this phenomenon. Therefore, from the pre launch to the 1 months after the release, we set up the box office prediction model with the weekly variation of the weekly release to predict the box office for the first week, the box office for second weeks, the third week box office and the box office at the fourth week.\\
+In the past prediction of box office, we usually only forecast the overall box office, but often ignored the movie's influence on movie box office due to the audience's attitude. Such as "wolf 2", the movie box office to be among the world's top 100, because in the release process, because the audience warmly, attracted the audience is not the original film (film series the fans, fans, like the kind of audience) to watch a movie, which leads to the box office continued to rise however, the traditional model is unable to capture this phenomenon. Therefore, as shown in Figure \ref{fig:dyna}, from the pre launch to the 1 months after the release, we set up the box office prediction model with the weekly variation of the weekly release to predict the box office for the first week, the box office for second weeks, the third week box office and the box office at the fourth week.
 \par In this section, we add two type features: $weibo_i$, The ratio of creative comments and all comments until the $ith$ week
 and $week_i$ The box office in the $ith$ week. With these additional messages obtained from audience and current box office, the results we predict are more similiar to real box office, shown in Table 3.
 \begin{table*}[!htbp]
