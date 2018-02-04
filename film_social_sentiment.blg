@@ -29,45 +29,45 @@ Warning--no number and no volume in tang2015target-dependent
 Warning--page numbers missing in both pages and numpages fields in tang2015target-dependent
 Warning--empty publisher in tang2015user
 Warning--empty address in tang2015user
-You've used 26 entries,
+You've used 33 entries,
             5706 wiz_defined-function locations,
-            1457 strings with 20281 characters,
-and the built_in function-call counts, 30800 in all, are:
-= -- 4292
-> -- 1224
+            1497 strings with 21326 characters,
+and the built_in function-call counts, 38824 in all, are:
+= -- 5624
+> -- 1439
 < -- 0
-+ -- 381
-- -- 404
-* -- 2200
-:= -- 3164
-add.period$ -- 130
-call.type$ -- 26
-change.case$ -- 191
-chr.to.int$ -- 25
-cite$ -- 48
-duplicate$ -- 2325
-empty$ -- 1721
-format.name$ -- 503
-if$ -- 7784
++ -- 443
+- -- 488
+* -- 2677
+:= -- 3921
+add.period$ -- 165
+call.type$ -- 33
+change.case$ -- 231
+chr.to.int$ -- 32
+cite$ -- 55
+duplicate$ -- 2939
+empty$ -- 2178
+format.name$ -- 603
+if$ -- 9938
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 108
-newline$ -- 244
-num.names$ -- 207
-pop$ -- 1013
+missing$ -- 136
+newline$ -- 300
+num.names$ -- 263
+pop$ -- 1249
 preamble$ -- 1
-purify$ -- 320
+purify$ -- 395
 quote$ -- 0
-skip$ -- 829
+skip$ -- 1049
 stack$ -- 0
-substring$ -- 2231
-swap$ -- 257
+substring$ -- 2859
+swap$ -- 330
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 466
+type$ -- 578
 warning$ -- 22
-while$ -- 204
+while$ -- 277
 width$ -- 0
-write$ -- 478
+write$ -- 597
 (There were 23 warnings)

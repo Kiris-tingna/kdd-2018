@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.21)  2 FEB 2018 18:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.21)  4 FEB 2018 13:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1163,51 +1163,61 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 10.95pt on input line 32.
  (./introduce.tex
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 10.
+(Font)              scaled to size 9.0pt on input line 9.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 9.0pt on input line 11.
+(Font)              scaled to size 9.0pt on input line 10.
 Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/LinuxLibertineT-TLF/m/sc/9'.
 (microtype)             Ignoring protrusion settings for this character.
  [1.1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]) (./overview.tex
-<./graphs/screenshot4.png, id=156, 1826.825pt x 974.64125pt>
-File: ./graphs/screenshot4.png Graphic file (type png)
+<./graphs/screenshot_dashboard.png, id=156, 1146.2825pt x 592.2125pt>
+File: ./graphs/screenshot_dashboard.png Graphic file (type png)
 
-<use ./graphs/screenshot4.png>
-Package pdftex.def Info: ./graphs/screenshot4.png used on input line 6.
-(pdftex.def)             Requested size: 144.54pt x 77.11032pt.
+<use ./graphs/screenshot_dashboard.png>
+Package pdftex.def Info: ./graphs/screenshot_dashboard.png used on input line 6
+.
+(pdftex.def)             Requested size: 144.54pt x 74.66795pt.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 7.0pt on input line 6.
 
-<./graphs/screenshot1.png, id=158, 1147.28625pt x 605.26125pt>
-File: ./graphs/screenshot1.png Graphic file (type png)
+<./graphs/screenshot_network.png, id=158, 1132.23pt x 592.2125pt>
+File: ./graphs/screenshot_network.png Graphic file (type png)
 
-<use ./graphs/screenshot1.png>
-Package pdftex.def Info: ./graphs/screenshot1.png used on input line 8.
-(pdftex.def)             Requested size: 144.54pt x 76.24854pt.
+<use ./graphs/screenshot_network.png>
+Package pdftex.def Info: ./graphs/screenshot_network.png used on input line 8.
+(pdftex.def)             Requested size: 144.54pt x 75.59871pt.
 
-<./graphs/screenshot2.png, id=159, 1047.915pt x 590.205pt>
-File: ./graphs/screenshot2.png Graphic file (type png)
+<./graphs/screenshot_dynamic.png, id=159, 1054.94125pt x 562.1pt>
+File: ./graphs/screenshot_dynamic.png Graphic file (type png)
 
-<use ./graphs/screenshot2.png>
-Package pdftex.def Info: ./graphs/screenshot2.png used on input line 10.
-(pdftex.def)             Requested size: 144.54pt x 81.40334pt.
+<use ./graphs/screenshot_dynamic.png>
+Package pdftex.def Info: ./graphs/screenshot_dynamic.png used on input line 10.
 
-<./graphs/screenshot3.png, id=160, 1118.1775pt x 587.19376pt>
-File: ./graphs/screenshot3.png Graphic file (type png)
+(pdftex.def)             Requested size: 144.54pt x 77.01237pt.
 
-<use ./graphs/screenshot3.png>
-Package pdftex.def Info: ./graphs/screenshot3.png used on input line 12.
-(pdftex.def)             Requested size: 144.54pt x 75.89883pt.
+<./graphs/screenshot_predict.png, id=160, 1117.17375pt x 582.175pt>
+File: ./graphs/screenshot_predict.png Graphic file (type png)
 
-<./graphs/screenshot5.png, id=161, 1059.96pt x 550.055pt>
-File: ./graphs/screenshot5.png Graphic file (type png)
+<use ./graphs/screenshot_predict.png>
+Package pdftex.def Info: ./graphs/screenshot_predict.png used on input line 12.
 
-<use ./graphs/screenshot5.png>
-Package pdftex.def Info: ./graphs/screenshot5.png used on input line 14.
-(pdftex.def)             Requested size: 144.54pt x 75.0012pt.
+(pdftex.def)             Requested size: 144.54pt x 75.32118pt.
+
+<./graphs/screenshot_senti.png, id=161, 1046.91125pt x 553.06625pt>
+File: ./graphs/screenshot_senti.png Graphic file (type png)
+
+<use ./graphs/screenshot_senti.png>
+Package pdftex.def Info: ./graphs/screenshot_senti.png used on input line 14.
+(pdftex.def)             Requested size: 144.54pt x 76.35698pt.
+
+<./graphs/screenshot_text.png, id=162, 1119.18124pt x 555.07375pt>
+File: ./graphs/screenshot_text.png Graphic file (type png)
+
+<use ./graphs/screenshot_text.png>
+Package pdftex.def Info: ./graphs/screenshot_text.png used on input line 16.
+(pdftex.def)             Requested size: 144.54pt x 71.67934pt.
 Package epstopdf Info: Source file: <./graphs/overview.eps>
 (epstopdf)                    date: 2018-02-01 14:56:37
 (epstopdf)                    size: 2230398 bytes
@@ -1216,15 +1226,15 @@ Package epstopdf Info: Source file: <./graphs/overview.eps>
 (epstopdf)                    size: 39496 bytes
 (epstopdf)             Command: <repstopdf --outfile=./graphs/overview-eps-conv
 erted-to.pdf ./graphs/overview.eps>
-(epstopdf)             \includegraphics on input line 21.
+(epstopdf)             \includegraphics on input line 23.
 Package epstopdf Info: Output file is already uptodate.
 
-<./graphs/overview-eps-converted-to.pdf, id=162, 499.8675pt x 539.01375pt>
+<./graphs/overview-eps-converted-to.pdf, id=163, 499.8675pt x 539.01375pt>
 File: ./graphs/overview-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./graphs/overview-eps-converted-to.pdf>
 Package pdftex.def Info: ./graphs/overview-eps-converted-to.pdf used on input l
-ine 21.
+ine 23.
 (pdftex.def)             Requested size: 192.91872pt x 208.02675pt.
 ) (./analysis.tex
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msa.cfg
@@ -1244,11 +1254,15 @@ LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 23.
  [2.2])
 (./sentiment.tex
+Underfull \vbox (badness 1112) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3.3 <./graphs/screenshot4.png> <./graphs/screenshot1.png> <./graphs/screensho
-t2.png> <./graphs/screenshot3.png> <./graphs/screenshot5.png> <./graphs/overvie
-w-eps-converted-to.pdf>]
+ [3.3 <./graphs/screenshot_dashboard.png> <./graphs/screenshot_network.png> <./
+graphs/screenshot_dynamic.png> <./graphs/screenshot_predict.png> <./graphs/scre
+enshot_senti.png> <./graphs/screenshot_text.png> <./graphs/overview-eps-convert
+ed-to.pdf>]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 17.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
@@ -1287,7 +1301,7 @@ rted-to.pdf ./graphs/bi-lstm.eps>
 (epstopdf)             \includegraphics on input line 87.
 Package epstopdf Info: Output file is already uptodate.
 
-<./graphs/bi-lstm-eps-converted-to.pdf, id=250, 659.46375pt x 460.72125pt>
+<./graphs/bi-lstm-eps-converted-to.pdf, id=253, 659.46375pt x 460.72125pt>
 File: ./graphs/bi-lstm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./graphs/bi-lstm-eps-converted-to.pdf>
@@ -1307,7 +1321,7 @@ onverted-to.pdf ./graphs/sentiment_1.eps>
 (epstopdf)             \includegraphics on input line 141.
 Package epstopdf Info: Output file is already uptodate.
 
-<./graphs/sentiment_1-eps-converted-to.pdf, id=278, 571.13374pt x 133.49875pt>
+<./graphs/sentiment_1-eps-converted-to.pdf, id=281, 571.13374pt x 133.49875pt>
 File: ./graphs/sentiment_1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./graphs/sentiment_1-eps-converted-to.pdf>
@@ -1326,7 +1340,7 @@ onverted-to.pdf ./graphs/sentiment_2.eps>
 (epstopdf)             \includegraphics on input line 143.
 Package epstopdf Info: Output file is already uptodate.
 
-<./graphs/sentiment_2-eps-converted-to.pdf, id=279, 571.13374pt x 133.49875pt>
+<./graphs/sentiment_2-eps-converted-to.pdf, id=282, 571.13374pt x 133.49875pt>
 File: ./graphs/sentiment_2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./graphs/sentiment_2-eps-converted-to.pdf>
@@ -1334,10 +1348,6 @@ Package pdftex.def Info: ./graphs/sentiment_2-eps-converted-to.pdf used on inpu
 t line 143.
 (pdftex.def)             Requested size: 241.14749pt x 56.36649pt.
 ) (./impact.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
-
- []
-
 Package epstopdf Info: Source file: <./graphs/impact.eps>
 (epstopdf)                    date: 2018-02-01 14:56:37
 (epstopdf)                    size: 58991 bytes
@@ -1348,7 +1358,8 @@ Package epstopdf Info: Source file: <./graphs/impact.eps>
 ted-to.pdf ./graphs/impact.eps>
 (epstopdf)             \includegraphics on input line 8.
 Package epstopdf Info: Output file is already uptodate.
-<./graphs/impact-eps-converted-to.pdf, id=281, 510.90875pt x 209.78375pt>
+
+<./graphs/impact-eps-converted-to.pdf, id=284, 510.90875pt x 209.78375pt>
 File: ./graphs/impact-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./graphs/impact-eps-converted-to.pdf>
@@ -1407,7 +1418,7 @@ f>
 (epstopdf)             \includegraphics on input line 27.
 Package epstopdf Info: Output file is already uptodate.
 
-<./graphs/dynamicimpact-eps-converted-to.pdf, id=324, 1547.7825pt x 833.1125pt>
+<./graphs/dynamicimpact-eps-converted-to.pdf, id=327, 1547.7825pt x 833.1125pt>
 File: ./graphs/dynamicimpact-eps-converted-to.pdf Graphic file (type pdf)
 <use ./graphs/dynamicimpact-eps-converted-to.pdf>
 Package pdftex.def Info: ./graphs/dynamicimpact-eps-converted-to.pdf used on in
@@ -1425,7 +1436,7 @@ nverted-to.pdf ./graphs/boxpredict.eps>
 (epstopdf)             \includegraphics on input line 35.
 Package epstopdf Info: Output file is already uptodate.
 
-<./graphs/boxpredict-eps-converted-to.pdf, id=327, 736.7525pt x 542.025pt>
+<./graphs/boxpredict-eps-converted-to.pdf, id=330, 736.7525pt x 542.025pt>
 File: ./graphs/boxpredict-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./graphs/boxpredict-eps-converted-to.pdf>
@@ -1447,13 +1458,16 @@ d-to.pdf ./graphs/mhin.eps>
 (epstopdf)             \includegraphics on input line 6.
 Package epstopdf Info: Output file is already uptodate.
 
-<./graphs/mhin-eps-converted-to.pdf, id=379, 496.85625pt x 361.35pt>
+<./graphs/mhin-eps-converted-to.pdf, id=382, 496.85625pt x 361.35pt>
 File: ./graphs/mhin-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./graphs/mhin-eps-converted-to.pdf>
 Package pdftex.def Info: ./graphs/mhin-eps-converted-to.pdf used on input line 
 6.
 (pdftex.def)             Requested size: 192.91872pt x 140.30287pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [8.8 <./graphs/mhin-eps-converted-to.pdf>]
 Overfull \hbox (8.95111pt too wide) in paragraph at lines 68--79
  [][] 
@@ -1465,23 +1479,21 @@ Overfull \hbox (3.72864pt too wide) detected at line 87
 /9 º \U/ntxmia/m/it/9 = []
  []
 
-) (./case.tex <./graphs/case1.png, id=422, 532.99126pt x 506.89375pt>
+) (./case.tex <./graphs/case1.png, id=409, 532.99126pt x 506.89375pt>
 File: ./graphs/case1.png Graphic file (type png)
 
 <use ./graphs/case1.png>
 Package pdftex.def Info: ./graphs/case1.png used on input line 8.
 (pdftex.def)             Requested size: 192.91872pt x 183.47163pt.
- [9.9 <./graphs/case1.png>]
-<./graphs/case3.png, id=435, 884.30376pt x 713.66624pt>
+ [9.9]
+<./graphs/case3.png, id=436, 884.30376pt x 713.66624pt>
 File: ./graphs/case3.png Graphic file (type png)
 
 <use ./graphs/case3.png>
 Package pdftex.def Info: ./graphs/case3.png used on input line 40.
 (pdftex.def)             Requested size: 192.91872pt x 155.6894pt.
-) (./other.tex
-Underfull \vbox (badness 3471) has occurred while \output is active []
-
- [10.10 <./graphs/case3.png>]) (./film_social_sentiment.bbl
+) (./other.tex [10.10 <./graphs/case1.png> <./graphs/case3.png>]) (./film_socia
+l_sentiment.bbl
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 7.0pt on input line 46.
 Missing character: There is no â in font LinLibertineT-tlf-ot1!
@@ -1491,7 +1503,7 @@ Missing character: There is no  in font LinLibertineT-tlf-ot1!
 Missing character: There is no â in font LinLibertineTI-tlf-ot1!
 Missing character: There is no ” in font LinLibertineTI-tlf-ot1!
 LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on
- input line 273.
+ input line 333.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.
 fd
@@ -1499,7 +1511,7 @@ File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 7.0pt on input line 273.
+(Font)              scaled to size 7.0pt on input line 333.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
@@ -1519,11 +1531,11 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
  ) 
 Here is how much of TeX's memory you used:
- 18033 strings out of 492995
- 272759 string characters out of 6132704
- 391005 words of memory out of 5000000
- 20629 multiletter control sequences out of 15000+600000
- 99701 words of font info for 334 fonts, out of 8000000 for 9000
+ 18085 strings out of 492995
+ 274279 string characters out of 6132704
+ 390331 words of memory out of 5000000
+ 20654 multiletter control sequences out of 15000+600000
+ 101651 words of font info for 346 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  60i,15n,94p,1870b,560s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_u7qtuy.enc
@@ -1551,10 +1563,10 @@ dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2017/texmf-dist/fon
 ts/type1/public/newtx/zxlr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
 public/newtx/zxlri.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/n
 ewtx/zxlzi.pfb>
-Output written on film_social_sentiment.pdf (11 pages, 1741765 bytes).
+Output written on film_social_sentiment.pdf (11 pages, 1817499 bytes).
 PDF statistics:
- 563 PDF objects out of 1000 (max. 8388607)
- 469 compressed objects within 5 object streams
- 146 named destinations out of 1000 (max. 500000)
- 34084 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 581 PDF objects out of 1000 (max. 8388607)
+ 485 compressed objects within 5 object streams
+ 154 named destinations out of 1000 (max. 500000)
+ 34089 words of extra memory for PDF output out of 35830 (max. 10000000)
 

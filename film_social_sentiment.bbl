@@ -61,6 +61,18 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{Chang and Ki}{Chang and Ki}{2005}]%
+        {chang2005devising}
+\bibfield{author}{\bibinfo{person}{Byeng-Hee Chang} {and}
+  \bibinfo{person}{Eyun-Jung Ki}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{Devising a practical model for predicting
+  theatrical movie success: Focusing on the experience good property}.
+\newblock \bibinfo{journal}{{\em Journal of Media Economics\/}}
+  \bibinfo{volume}{18}, \bibinfo{number}{4} (\bibinfo{year}{2005}),
+  \bibinfo{pages}{247--269}.
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{Chen, Xu, He, and Wang}{Chen
   et~al\mbox{.}}{2017}]%
         {chen2017improving}
@@ -89,6 +101,18 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{De~Vany and Walls}{De~Vany and Walls}{1999}]%
+        {de1999uncertainty}
+\bibfield{author}{\bibinfo{person}{Arthur De~Vany} {and}
+  \bibinfo{person}{W~David Walls}.} \bibinfo{year}{1999}\natexlab{}.
+\newblock \showarticletitle{Uncertainty in the movie industry: Does star power
+  reduce the terror of the box office?}
+\newblock \bibinfo{journal}{{\em Journal of cultural economics\/}}
+  \bibinfo{volume}{23}, \bibinfo{number}{4} (\bibinfo{year}{1999}),
+  \bibinfo{pages}{285--318}.
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{Diao, Qiu, Wu, Smola, Jiang, and Wang}{Diao
   et~al\mbox{.}}{2014}]%
         {diao2014jointly}
@@ -113,6 +137,17 @@
 \newblock \showarticletitle{Adaptive Recursive Neural Network for
   Target-dependent Twitter Sentiment Classification}.
 \newblock  (\bibinfo{year}{2014}), \bibinfo{pages}{49--54}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Elberse}{Elberse}{2007}]%
+        {elberse2007power}
+\bibfield{author}{\bibinfo{person}{Anita Elberse}.}
+  \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{The power of stars: Do star actors drive the
+  success of movies?}
+\newblock \bibinfo{journal}{{\em Journal of Marketing\/}} \bibinfo{volume}{71},
+  \bibinfo{number}{4} (\bibinfo{year}{2007}), \bibinfo{pages}{102--120}.
 \newblock
 
 
@@ -166,6 +201,18 @@
   2010 Annual Conference of the North American Chapter of the Association for
   Computational Linguistics}}. Association for Computational Linguistics,
   \bibinfo{pages}{293--296}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Karniouchina}{Karniouchina}{2011}]%
+        {karniouchina2011impact}
+\bibfield{author}{\bibinfo{person}{Ekaterina~V Karniouchina}.}
+  \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Impact of star and movie buzz on motion picture
+  distribution and box office revenue}.
+\newblock \bibinfo{journal}{{\em International Journal of Research in
+  Marketing\/}} \bibinfo{volume}{28}, \bibinfo{number}{1}
+  (\bibinfo{year}{2011}), \bibinfo{pages}{62--74}.
 \newblock
 
 
@@ -252,6 +299,19 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{Nelson and Glotfelty}{Nelson and
+  Glotfelty}{2012}]%
+        {nelson2012movie}
+\bibfield{author}{\bibinfo{person}{Randy~A Nelson} {and}
+  \bibinfo{person}{Robert Glotfelty}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Movie stars and box office revenues: an empirical
+  analysis}.
+\newblock \bibinfo{journal}{{\em Journal of Cultural Economics\/}}
+  \bibinfo{volume}{36}, \bibinfo{number}{2} (\bibinfo{year}{2012}),
+  \bibinfo{pages}{141--166}.
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{Panaligan and Chen}{Panaligan and
   Chen}{2013}]%
         {panaligan2013quantifying}
@@ -284,6 +344,17 @@
 \newblock \bibinfo{journal}{{\em Expert Systems with Applications\/}}
   \bibinfo{volume}{30}, \bibinfo{number}{2} (\bibinfo{year}{2006}),
   \bibinfo{pages}{243--254}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Sochay}{Sochay}{1994}]%
+        {sochay1994predicting}
+\bibfield{author}{\bibinfo{person}{Scott Sochay}.}
+  \bibinfo{year}{1994}\natexlab{}.
+\newblock \showarticletitle{Predicting the performance of motion pictures}.
+\newblock \bibinfo{journal}{{\em Journal of Media Economics\/}}
+  \bibinfo{volume}{7}, \bibinfo{number}{4} (\bibinfo{year}{1994}),
+  \bibinfo{pages}{1--20}.
 \newblock
 
 
@@ -359,6 +430,19 @@
 \newblock \showarticletitle{User Modeling with Neural Network for Review Rating
   Prediction.}. In \bibinfo{booktitle}{{\em IJCAI}}.
   \bibinfo{pages}{1340--1346}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Zhang, Luo, and Yang}{Zhang
+  et~al\mbox{.}}{2009}]%
+        {zhang2009forecasting}
+\bibfield{author}{\bibinfo{person}{Li Zhang}, \bibinfo{person}{Jianhua Luo},
+  {and} \bibinfo{person}{Suying Yang}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{Forecasting box office revenue of movies with BP
+  neural network}.
+\newblock \bibinfo{journal}{{\em Expert Systems with Applications\/}}
+  \bibinfo{volume}{36}, \bibinfo{number}{3} (\bibinfo{year}{2009}),
+  \bibinfo{pages}{6580--6587}.
 \newblock
 
 
