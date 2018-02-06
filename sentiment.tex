@@ -48,9 +48,12 @@ Potential comment targets mapping dictionary $A$, $P$\\
     Review No. & Contents & Referred & Film No.& time point  & Scores \\
     \hline
     1 & \tabincell{l}{Yang Yang's hard temperament\\ is enough to hold up the role} & Yang Yang & Ten great II of peach blossom & 2016-07-25T13:36:12.000+0800 & 10\\
+    \hline
     2 & \tabincell{l}{Yang Yang's acting is really \\ embarrassing, Crystal Liu is OK} & \tabincell{l}{Yang Yang,\\ Crystal Liu}& Ten great II of peach blossom & 2017-08-07T20:18:55.000+0800 & 5\\
+    \hline
     3 & \tabincell{l}{The story of embarrassment,\\ feeling Yehua did not love Baiqian} & \tabincell{l}{Yang Yang,\\ Crystal Liu} &  Ten great II of peach blossom & 2017-08-07T21:09:07.000+0800 & 2\\
-    $r_i$ & \dots & \dots & $f_i$ & $time_i$  & $s_i$ \\
+    \hline
+    \dots & \dots & \dots & \dots & \dots  & \dots \\
     \hline
   \end{tabular}
   \caption{review targets after named entities recognition}
@@ -62,7 +65,7 @@ Potential comment targets mapping dictionary $A$, $P$\\
 
 \par In order to decrease the storage space of data, we replace film name and user name by mapping them using film id and user id. $f_i \in F=\{f_1, f_2, \dots, f_m\}$ and $u_i \in U = \{u_1, u_2, \dots, u_U\}$. Let score for each review be $s_i \in [0, 10]$ and $time_i$ be the timestamps. The features we finally retrieved can be summarized in table \ref{tab:summary}.
 
-\subsection{Target-Dependent Sentiment Classification}
+\subsection{Binary Sentiment Classification}
 \par Sentences tend to be more complex when targets we want to analyse increase and sentiments detection being a hard work when analysing more objects. We take leader creator of film as major targets in this paper. Examples containing multi targets are shown as follows.
 \begin{enumerate}
   \item Live here now! The point of life is looking for the point. ---\emph{A dog's purpose}
@@ -91,18 +94,19 @@ Potential comment targets mapping dictionary $A$, $P$\\
 \label{fig:lstm}
 \end{figure}
 
-\par Specially, word sequence are represented as a low dimensional , continuous and valued vector. It is called word embedding and we use pre-trained vectors so as to make better use of semantic and grammatical associations. Assume each $d$-dimension vector $ W_i = \mathbb{R}^{d \times |V|}$ for $i$th word in whole vocabulary $V$. Targets words with $L_r$ length cover $tw = \{W_r, W_{r+1}, \dots, W_{r+L_r-1}\}$ and context words $cw = \{W_{r-L_w}, \dots, W_{r-1}, W_{r+L_r}, \dots, W_{r+L_r+L_w-1}\}$ with window length $L_w$ surround corresponding targets words $tw$. \emph{BiLSTM} maps word vectors to fix-length sentence vector by recursively transformation above vectors of previous time step $h_{t-1}$. Cells for \emph{BiLSTM} in Figure \ref{fig:lstm} contains neural gates: input gates, forget gates, and output gates which adaptively remember input vector, forget history, and generate output vector. We add softmax layer to output sentiment of sentence vector which cover hidden representation of vectors for specific target segment as Figure 1 shows. Core calculation in LSTM cells are listed in bellow equations. \cite{} $\odot$ is element-wise multiplication and $\sigma$ is sigmoid activation, $W_i, W_f, W_o, b_i, b_f, b_o$ are parameters for input, forget and output gates.
-\begin{subequations}
-\begin{align}
-  i_t &= \sigma(W_i \bullet [h_{t-1};w_t] + b_i)\\
-  f_t &= \sigma(W_f \bullet [h_{t-1};w_t] + b_f)\\
-  o_t &= \sigma(W_o \bullet [h_{t-1};w_t] + b_o)\\
-  g_t &= \tanh(W_r \bullet [h_{t-1};w_t] + b_r)\\
-  c_t &= i_t \odot g_t + f_t \odot c_{t-1}\\
-  h_t &= o_t \odot \tanh(c_t)
-\end{align}
-\end{subequations}
+\par Specially, word sequence are represented as a low dimensional , continuous and valued vector. It is called word embedding and we use pre-trained vectors so as to make better use of semantic and grammatical associations. Assume each $d$-dimension vector $ W_i = \mathbb{R}^{d \times |V|}$ for $i$th word in whole vocabulary $V$. Targets words with $L_r$ length cover $tw = \{W_r, W_{r+1}, \dots, W_{r+L_r-1}\}$ and context words $cw = \{W_{r-L_w}, \dots, W_{r-1}, W_{r+L_r}, \dots, W_{r+L_r+L_w-1}\}$ with window length $L_w$ surround corresponding targets words $tw$. \emph{BiLSTM} maps word vectors to fix-length sentence vector by recursively transformation above vectors of previous time step $h_{t-1}$. Cells for \emph{BiLSTM} in Figure \ref{fig:lstm} contains neural gates: input gates, forget gates, and output gates which adaptively remember input vector, forget history, and generate output vector. We add softmax layer to output sentiment of sentence vector which cover hidden representation of vectors for specific target segment as Figure 1 shows. 
 
+%Core calculation in LSTM cells are listed in bellow equations. \cite{} $\odot$ is element-wise multiplication and $\sigma$ is sigmoid activation, $W_i, W_f, W_o, b_i, b_f, b_o$ are parameters for input, forget and output gates.
+%\begin{subequations}
+%\begin{align}
+%  i_t &= \sigma(W_i \bullet [h_{t-1};w_t] + b_i)\\
+%  f_t &= \sigma(W_f \bullet [h_{t-1};w_t] + b_f)\\
+%  o_t &= \sigma(W_o \bullet [h_{t-1};w_t] + b_o)\\
+%  g_t &= \tanh(W_r \bullet [h_{t-1};w_t] + b_r)\\
+%  c_t &= i_t \odot g_t + f_t \odot c_{t-1}\\
+%  h_t &= o_t \odot \tanh(c_t)
+%\end{align}
+%\end{subequations}
 
 \subsection{Actor-Level and Film-level Sentiment Trend}
 \par In this section, we mainly care about how to predict latent sentiment transform. Obviously, we quantify explicit sentiment towards special actors or directors. Although all information came from overall corpus, we can not deny that different sentiment exist in different time period during movie life. Audience's sentiments have trends and always behave dynamically. Previous work concentrate on sentiment polarity and we extend it by capture dynamic time-period sentiment. Denote a time period range from $time_r = [time_i, time_j]$, we capture review statistical sum $R_{f_i}$ of each movie $f_i$ at time period $time_r$ from $Pos$ and $Neg$. Then we get different target $j$'s positive or negative sentiment transformation at different $time_r$.
