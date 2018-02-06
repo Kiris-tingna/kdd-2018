@@ -1,5 +1,7 @@
-\section{Practical Sentiment Analyse}
+\section{Target-Dependent Sentiment Analysis}
 \label{sec:sent}
+\subsection{Named Entity Disambiguation}
+Named entity disambiguation is one of the most important problems in natural language processing. In named entity category, person name has strong ambiguity so that person name disambiguation is the most difficult category. However, because the project inquiry is a well-known director and famous actor, and Chinese name and English name, makes the probability of Fijian phenomenon is greatly reduced, in this collection of 2371 directors and 801 actors, one by one, through the Baidu encyclopedia content, movie actor information, can be a good solution the same problem.
 \par The main purpose of sentiment analyse is to discover views and opinions diversity \cite{katiyar2016investigating} of different targets in films which reflect what attract audience watching the movie. The sample dataset in this area are review corpus $ R =\{r_1, r_2, \dots, r_n\}$ and each $r_i$ has film name  $f_i$ it belonging to, time point $time_i$ , scores towards this film $s_i$ and user $u_i$ who scores. These attributes of reviews are discrete (has domain specific value) and many sentences in it contribute to the whole sentiment of this single review. Since reviews are spread in social media platform such as twitter or micro-blogs, the sentences are limited and review of movie are usually enough short. Thus, many phenomenon occurred on short texts or natural language add difficulties when analysing the sentiments of targets (e.g. Rhetoric, metaphor, proverb and nicknames)\cite{li2014sentiment}. Unlike many works focus on proceed in sentence-level document-level and time-period level step by step\cite{chen2017improving}, we try to figure out the sentiment to a specific actors or director(leading creator of this film)\cite{dong2014adaptive}. A useful prior knowledge in reviews together with reviewers' rating score or stars made by user is evaluation score of specific film. We make the best of this knowledge to enlarge our sentiment words database because user usually behave consistent sentiment to same target.
 
 \subsection{Named Entities Recognition}
@@ -102,7 +104,7 @@ Potential comment targets mapping dictionary $A$, $P$\\
 \end{subequations}
 
 
-\subsection{Film-level Sentiment Trend}
+\subsection{Actor-Level and Film-level Sentiment Trend}
 \par In this section, we mainly care about how to predict latent sentiment transform. Obviously, we quantify explicit sentiment towards special actors or directors. Although all information came from overall corpus, we can not deny that different sentiment exist in different time period during movie life. Audience's sentiments have trends and always behave dynamically. Previous work concentrate on sentiment polarity and we extend it by capture dynamic time-period sentiment. Denote a time period range from $time_r = [time_i, time_j]$, we capture review statistical sum $R_{f_i}$ of each movie $f_i$ at time period $time_r$ from $Pos$ and $Neg$. Then we get different target $j$'s positive or negative sentiment transformation at different $time_r$.
 
 \begin{equation}
