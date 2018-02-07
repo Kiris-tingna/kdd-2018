@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.21)  7 FEB 2018 20:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.21)  7 FEB 2018 20:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1188,7 +1188,7 @@ erted-to.pdf ./graphs/overview.eps>
 (epstopdf)             \includegraphics on input line 5.
 Package epstopdf Info: Output file is already uptodate.
 
-<./graphs/overview-eps-converted-to.pdf, id=134, 453.695pt x 539.01375pt>
+<./graphs/overview-eps-converted-to.pdf, id=133, 453.695pt x 539.01375pt>
 File: ./graphs/overview-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./graphs/overview-eps-converted-to.pdf>
@@ -1196,7 +1196,7 @@ Package pdftex.def Info: ./graphs/overview-eps-converted-to.pdf used on input l
 ine 5.
 (pdftex.def)             Requested size: 192.91872pt x 229.19707pt.
 
-<./graphs/screenshot_dashboard.png, id=135, 1146.2825pt x 592.2125pt>
+<./graphs/screenshot_dashboard.png, id=134, 1146.2825pt x 592.2125pt>
 File: ./graphs/screenshot_dashboard.png Graphic file (type png)
 
 <use ./graphs/screenshot_dashboard.png>
@@ -1206,21 +1206,21 @@ Package pdftex.def Info: ./graphs/screenshot_dashboard.png used on input line 1
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 7.0pt on input line 13.
 
-<./graphs/screenshot_senti.png, id=137, 1046.91125pt x 553.06625pt>
+<./graphs/screenshot_senti.png, id=136, 1046.91125pt x 553.06625pt>
 File: ./graphs/screenshot_senti.png Graphic file (type png)
 
 <use ./graphs/screenshot_senti.png>
 Package pdftex.def Info: ./graphs/screenshot_senti.png used on input line 15.
 (pdftex.def)             Requested size: 162.0181pt x 85.58936pt.
 
-<./graphs/screenshot_text.png, id=138, 1119.18124pt x 555.07375pt>
+<./graphs/screenshot_text.png, id=137, 1119.18124pt x 555.07375pt>
 File: ./graphs/screenshot_text.png Graphic file (type png)
 
 <use ./graphs/screenshot_text.png>
 Package pdftex.def Info: ./graphs/screenshot_text.png used on input line 17.
 (pdftex.def)             Requested size: 162.0181pt x 80.35234pt.
 
-<./graphs/screenshot_dynamic.png, id=139, 1054.94125pt x 562.1pt>
+<./graphs/screenshot_dynamic.png, id=138, 1054.94125pt x 562.1pt>
 File: ./graphs/screenshot_dynamic.png Graphic file (type png)
 
 <use ./graphs/screenshot_dynamic.png>
@@ -1228,7 +1228,7 @@ Package pdftex.def Info: ./graphs/screenshot_dynamic.png used on input line 19.
 
 (pdftex.def)             Requested size: 162.0181pt x 86.32693pt.
 
-<./graphs/screenshot_predict.png, id=140, 1117.17375pt x 582.175pt>
+<./graphs/screenshot_predict.png, id=139, 1117.17375pt x 582.175pt>
 File: ./graphs/screenshot_predict.png Graphic file (type png)
 
 <use ./graphs/screenshot_predict.png>
@@ -1236,7 +1236,7 @@ Package pdftex.def Info: ./graphs/screenshot_predict.png used on input line 21.
 
 (pdftex.def)             Requested size: 162.0181pt x 84.42653pt.
 
-<./graphs/screenshot_network.png, id=141, 1132.23pt x 592.2125pt>
+<./graphs/screenshot_network.png, id=140, 1132.23pt x 592.2125pt>
 File: ./graphs/screenshot_network.png Graphic file (type png)
 
 <use ./graphs/screenshot_network.png>
@@ -1290,7 +1290,7 @@ Package epstopdf Info: Source file: <./graphs/bi-lstm.eps>
 rted-to.pdf ./graphs/bi-lstm.eps>
 (epstopdf)             \includegraphics on input line 93.
 Package epstopdf Info: Output file is already uptodate.
-<./graphs/bi-lstm-eps-converted-to.pdf, id=214, 659.46375pt x 460.72125pt>
+<./graphs/bi-lstm-eps-converted-to.pdf, id=218, 659.46375pt x 460.72125pt>
 File: ./graphs/bi-lstm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./graphs/bi-lstm-eps-converted-to.pdf>
@@ -1310,7 +1310,7 @@ onverted-to.pdf ./graphs/sentiment_1.eps>
 (epstopdf)             \includegraphics on input line 127.
 Package epstopdf Info: Output file is already uptodate.
 
-<./graphs/sentiment_1-eps-converted-to.pdf, id=238, 571.13374pt x 133.49875pt>
+<./graphs/sentiment_1-eps-converted-to.pdf, id=242, 571.13374pt x 133.49875pt>
 File: ./graphs/sentiment_1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./graphs/sentiment_1-eps-converted-to.pdf>
@@ -1329,14 +1329,14 @@ onverted-to.pdf ./graphs/sentiment_2.eps>
 (epstopdf)             \includegraphics on input line 129.
 Package epstopdf Info: Output file is already uptodate.
 
-<./graphs/sentiment_2-eps-converted-to.pdf, id=239, 571.13374pt x 133.49875pt>
+<./graphs/sentiment_2-eps-converted-to.pdf, id=243, 571.13374pt x 133.49875pt>
 File: ./graphs/sentiment_2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./graphs/sentiment_2-eps-converted-to.pdf>
 Package pdftex.def Info: ./graphs/sentiment_2-eps-converted-to.pdf used on inpu
 t line 129.
 (pdftex.def)             Requested size: 241.14749pt x 56.36649pt.
- [5.5 <./graphs/bi-lstm-eps-converted-to.pdf>] <./graphs/case3.png, id=260, 884
+ [5.5 <./graphs/bi-lstm-eps-converted-to.pdf>] <./graphs/case3.png, id=264, 884
 .30376pt x 713.66624pt>
 File: ./graphs/case3.png Graphic file (type png)
 
@@ -1360,7 +1360,7 @@ Package epstopdf Info: Source file: <./graphs/distribution.eps>
 converted-to.pdf ./graphs/distribution.eps>
 (epstopdf)             \includegraphics on input line 13.
 Package epstopdf Info: Output file is already uptodate.
-<./graphs/distribution-eps-converted-to.pdf, id=261, 433.62pt x 289.08pt>
+<./graphs/distribution-eps-converted-to.pdf, id=265, 433.62pt x 289.08pt>
 File: ./graphs/distribution-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./graphs/distribution-eps-converted-to.pdf>
@@ -1379,7 +1379,7 @@ converted-to.pdf ./graphs/contribution.eps>
 (epstopdf)             \includegraphics on input line 23.
 Package epstopdf Info: Output file is already uptodate.
 
-<./graphs/contribution-eps-converted-to.pdf, id=265, 488.82625pt x 209.78375pt>
+<./graphs/contribution-eps-converted-to.pdf, id=269, 488.82625pt x 209.78375pt>
 File: ./graphs/contribution-eps-converted-to.pdf Graphic file (type pdf)
 <use ./graphs/contribution-eps-converted-to.pdf>
 Package pdftex.def Info: ./graphs/contribution-eps-converted-to.pdf used on inp
@@ -1401,7 +1401,7 @@ nverted-to.pdf ./graphs/boxpredict.eps>
 (epstopdf)             \includegraphics on input line 81.
 Package epstopdf Info: Output file is already uptodate.
 
-<./graphs/boxpredict-eps-converted-to.pdf, id=323, 733.74126pt x 542.025pt>
+<./graphs/boxpredict-eps-converted-to.pdf, id=327, 733.74126pt x 542.025pt>
 File: ./graphs/boxpredict-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./graphs/boxpredict-eps-converted-to.pdf>
@@ -1418,7 +1418,7 @@ Overfull \hbox (8.6712pt too wide) in paragraph at lines 90--120
 ) (./hin.tex
 
 Package natbib Warning: Citation `sun2013meta-path-based' on page 8 undefined o
-n input line 2.
+n input line 3.
 
 Package epstopdf Info: Source file: <./graphs/mhin.eps>
 (epstopdf)                    date: 2018-02-01 14:56:37
@@ -1428,33 +1428,33 @@ Package epstopdf Info: Source file: <./graphs/mhin.eps>
 (epstopdf)                    size: 28635 bytes
 (epstopdf)             Command: <repstopdf --outfile=./graphs/mhin-eps-converte
 d-to.pdf ./graphs/mhin.eps>
-(epstopdf)             \includegraphics on input line 6.
+(epstopdf)             \includegraphics on input line 7.
 Package epstopdf Info: Output file is already uptodate.
-<./graphs/mhin-eps-converted-to.pdf, id=351, 496.85625pt x 361.35pt>
+<./graphs/mhin-eps-converted-to.pdf, id=355, 496.85625pt x 361.35pt>
 File: ./graphs/mhin-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./graphs/mhin-eps-converted-to.pdf>
 Package pdftex.def Info: ./graphs/mhin-eps-converted-to.pdf used on input line 
-6.
+7.
 (pdftex.def)             Requested size: 192.91872pt x 140.30287pt.
 
 
 Package natbib Warning: Citation `sun2009rankclus:' on page 8 undefined on inpu
-t line 12.
+t line 13.
 
 [8.8 <./graphs/boxpredict-eps-converted-to.pdf> <./graphs/mhin-eps-converted-to
 .pdf>]
-Overfull \hbox (8.95111pt too wide) in paragraph at lines 68--79
+Overfull \hbox (8.95111pt too wide) in paragraph at lines 69--80
  [][] 
  []
 
 
-Overfull \hbox (3.72864pt too wide) detected at line 87
+Overfull \hbox (3.72864pt too wide) detected at line 88
 []\OML/nxlmi/m/it/9 s\LMS/ntxsy/m/n/9 ¹\OML/nxlmi/m/it/9 a[]; a[]\LMS/ntxsy/m/n
 /9 º \U/ntxmia/m/it/9 = []
  []
 
-) (./case.tex <./graphs/case1.png, id=403, 532.99126pt x 506.89375pt>
+) (./case.tex <./graphs/case1.png, id=407, 532.99126pt x 506.89375pt>
 File: ./graphs/case1.png Graphic file (type png)
 
 <use ./graphs/case1.png>
@@ -1503,10 +1503,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 52.
  ) 
 Here is how much of TeX's memory you used:
- 18058 strings out of 492995
- 273859 string characters out of 6132704
- 390181 words of memory out of 5000000
- 20647 multiletter control sequences out of 15000+600000
+ 18059 strings out of 492995
+ 273868 string characters out of 6132704
+ 390223 words of memory out of 5000000
+ 20648 multiletter control sequences out of 15000+600000
  100072 words of font info for 345 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  60i,15n,94p,1870b,559s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1535,10 +1535,10 @@ dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2017/texmf-dist/fon
 ts/type1/public/newtx/zxlr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
 public/newtx/zxlri.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/n
 ewtx/zxlzi.pfb>
-Output written on film_social_sentiment.pdf (11 pages, 1591021 bytes).
+Output written on film_social_sentiment.pdf (11 pages, 1591239 bytes).
 PDF statistics:
- 572 PDF objects out of 1000 (max. 8388607)
- 462 compressed objects within 5 object streams
+ 576 PDF objects out of 1000 (max. 8388607)
+ 466 compressed objects within 5 object streams
  139 named destinations out of 1000 (max. 500000)
  33537 words of extra memory for PDF output out of 35830 (max. 10000000)
 
