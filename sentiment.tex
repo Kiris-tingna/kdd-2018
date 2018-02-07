@@ -5,13 +5,14 @@ Named entity disambiguation is one of the most important problems in natural lan
 \par The main purpose of sentiment analyse is to discover views and opinions diversity \cite{katiyar2016investigating} of different targets in films which reflect what attract audience watching the movie. The sample dataset in this area are review corpus $ R =\{r_1, r_2, \dots, r_n\}$ and each $r_i$ has film name  $f_i$ it belonging to, time point $time_i$ , scores towards this film $s_i$ and user $u_i$ who scores. These attributes of reviews are discrete (has domain specific value) and many sentences in it contribute to the whole sentiment of this single review. Since reviews are spread in social media platform such as twitter or micro-blogs, the sentences are limited and review of movie are usually enough short. Thus, many phenomenon occurred on short texts or natural language add difficulties when analysing the sentiments of targets (e.g. Rhetoric, metaphor, proverb and nicknames)\cite{li2014sentiment}. Unlike many works focus on proceed in sentence-level document-level and time-period level step by step\cite{chen2017improving}, we try to figure out the sentiment to a specific actors or director(leading creator of this film)\cite{dong2014adaptive}. A useful prior knowledge in reviews together with reviewers' rating score or stars made by user is evaluation score of specific film. We make the best of this knowledge to enlarge our sentiment words database because user usually behave consistent sentiment to same target.
 
 \subsection{Named Entities Recognition}
-\par If we want to know sentiments behind human expression, targets that people are taking about should be identified firstly. Here we concentrate on comment target about leader creators in films. The main challenging is the nicknames for actors and directors.
-\par \textbf{Sequence to sequence approach}. Given a word sequence $X=\{x_1, x_2, \dots, x_n\}$ we observed and the 4-tag label set $Tags=\{O,B,E,M\}$, the objective task is to find correct corresponding labels $Y=\{y_1, y_2, \dots, y_n | y_i \in Tags\} $. By optimizing the loss function with parameter $ \theta $
+\par If we want to know sentiments behind human expression, targets that people are taking about should be identified firstly. Here we concentrate on comment target about leader creators in films. The main challenging is the nicknames for actors and directors. Especially when one comment a film just referring his used acted film actress, it is necessary to seek other solution due to weakness of traditional solutions.
+\par Traditional solutions weak in training data and much more training time while we want to adjust algorithm frequently. Give a brief introduction about sequence to sequence approach. Given a word sequence $X=\{x_1, x_2, \dots, x_n\}$ we observed and the 4-tag label set $Tags=\{O,B,E,M\}$, the objective task is to find correct corresponding labels $Y=\{y_1, y_2, \dots, y_n | y_i \in Tags\} $. By optimizing the loss function with parameter $ \theta $
 \begin{equation}
     J(\theta)= \arg\min_{\theta} \frac{1}{n}\sum_{i=1}^{n}loss(f(x_i;\theta), y_i)
 \end{equation}
-recurrent neutral networks such as \emph{LSTM}, \emph{BidirectionalLSTM}, \emph{BidirectionalLSTM+CRF} \cite{chen2017improving} have been proved to be state-of-art structures. They consider both long time and short terms information and find tags with maximum possibility for sequence labeling. However, previous machine learning approaches need huge domain training data, while it is hardly to label these social media corpus accurately which are full of informality and flexibility. Especially actors get constantly evolving new roles in various films as time goes by, we hope find a simple and efficient way that recognize most of the comment targets in films reviews.
-\par \textbf{Fast and adaptive approach}. In order to mining entities in linear time, we apply key word matching for leader creators in films. Online knowledge database which store film meta information can be strong support providing comprehensive and dependable analysis. Focused crawling technology based on web linkage contribute to construction of prior knowledge of \textbf{actors}, \textbf{roles} and \textbf{directors}.
+recurrent neutral networks such as \emph{LSTM}, \emph{BidirectionalLSTM}, \emph{BidirectionalLSTM+CRF} \cite{chen2017improving} have been proved to be state-of-art structures. They consider both long time and short terms information and find tags with maximum possibility for sequence labeling. However, previous machine learning approaches need huge domain training data, while it is hardly to label these social media corpus accurately which are full of informality and flexibility. Especially actors get constantly evolving new roles in various films as time goes by, we hope find a simple and efficient way that recognize most of the comment targets in films reviews. There is a more fast and adaptive approach we adapted in this paper. In order to mining entities faster, we apply key word matching for leader creators in films. Online knowledge database which store film meta information can be strong support providing comprehensive and dependable analysis. Focused crawling technology based on web linkage contribute to construction of prior knowledge of \textbf{actors}, \textbf{roles} and \textbf{directors}. 
+
+Take a short example, Benedict Timothy Carlton Cumberbatch has nick name 'Curly Fu' and 'Peanut' which arisen by Sherlock he used to star in. We capture the Jaccard distance between 'Curly Fu' and 'Cur Fu' in word-level to qualify similarity for misspelling while Levenshtein distance (word edit distance) between 'Curly Fu' and 'Curly Ben' which represent word transform tolerance when doing word matching. Give thresholds control how similar and how different we can accept.
 
 \begin{algorithm}[htb]
 \renewcommand{\algorithmicrequire}{\textbf{Input:}}
@@ -94,7 +95,7 @@ Potential comment targets mapping dictionary $A$, $P$\\
 \label{fig:lstm}
 \end{figure}
 
-\par Specially, word sequence are represented as a low dimensional , continuous and valued vector. It is called word embedding and we use pre-trained vectors so as to make better use of semantic and grammatical associations. Assume each $d$-dimension vector $ W_i = \mathbb{R}^{d \times |V|}$ for $i$th word in whole vocabulary $V$. Targets words with $L_r$ length cover $tw = \{W_r, W_{r+1}, \dots, W_{r+L_r-1}\}$ and context words $cw = \{W_{r-L_w}, \dots, W_{r-1}, W_{r+L_r}, \dots, W_{r+L_r+L_w-1}\}$ with window length $L_w$ surround corresponding targets words $tw$. \emph{BiLSTM} maps word vectors to fix-length sentence vector by recursively transformation above vectors of previous time step $h_{t-1}$. Cells for \emph{BiLSTM} in Figure \ref{fig:lstm} contains neural gates: input gates, forget gates, and output gates which adaptively remember input vector, forget history, and generate output vector. We add softmax layer to output sentiment of sentence vector which cover hidden representation of vectors for specific target segment as Figure 1 shows. 
+\par Specially, word sequence are represented as a low dimensional , continuous and valued vector. It is called word embedding and we use pre-trained vectors so as to make better use of semantic and grammatical associations. Assume each $d$-dimension vector $ W_i = \mathbb{R}^{d \times |V|}$ for $i$th word in whole vocabulary $V$. Targets words with $L_r$ length cover $tw = \{W_r, W_{r+1}, \dots, W_{r+L_r-1}\}$ and context words $cw = \{W_{r-L_w}, \dots, W_{r-1}, W_{r+L_r}, \dots, W_{r+L_r+L_w-1}\}$ with window length $L_w$ surround corresponding targets words $tw$. \emph{BiLSTM} maps word vectors to fix-length sentence vector by recursively transformation above vectors of previous time step $h_{t-1}$. Cells for \emph{BiLSTM} in Figure \ref{fig:lstm} contains neural gates: input gates, forget gates, and output gates which adaptively remember input vector, forget history, and generate output vector. We add softmax layer to output sentiment of sentence vector which cover hidden representation of vectors for specific target segment as Figure 1 shows.
 
 %Core calculation in LSTM cells are listed in bellow equations. \cite{} $\odot$ is element-wise multiplication and $\sigma$ is sigmoid activation, $W_i, W_f, W_o, b_i, b_f, b_o$ are parameters for input, forget and output gates.
 %\begin{subequations}
@@ -109,7 +110,7 @@ Potential comment targets mapping dictionary $A$, $P$\\
 %\end{subequations}
 
 \subsection{Actor-Level and Film-level Sentiment Trend}
-\par In this section, we mainly care about how to predict latent sentiment transform. Obviously, we quantify explicit sentiment towards special actors or directors. Although all information came from overall corpus, we can not deny that different sentiment exist in different time period during movie life. Audience's sentiments have trends and always behave dynamically. Previous work concentrate on sentiment polarity and we extend it by capture dynamic time-period sentiment. Denote a time period range from $time_r = [time_i, time_j]$, we capture review statistical sum $R_{f_i}$ of each movie $f_i$ at time period $time_r$ from $Pos$ and $Neg$. Then we get different target $j$'s positive or negative sentiment transformation at different $time_r$.
+\par It counts that cinema arrange movie schedule when movie on scene. We hold sentiment tendency to help understand and measure movie quality in some ways. Predicting future movie box-office gain which based on actor-Level and film-level sentiment trend is described as follows. In this section, we mainly care about how to predict latent sentiment transform. Obviously, we quantify explicit sentiment towards special actors or directors. Although all information came from overall corpus, we can not deny that different sentiment exist in different time period during movie life. Audience's sentiments have trends and always behave dynamically. Previous work concentrate on sentiment polarity and we extend it by capture dynamic time-period sentiment. Denote a time period range from $time_r = [time_i, time_j]$, we capture review statistical sum $R_{f_i}$ of each movie $f_i$ at time period $time_r$ from $Pos$ and $Neg$. Then we get different target $j$'s positive or negative sentiment transformation at different $time_r$.
 
 \begin{equation}
     SentimentPos^j_i (time_r) = 10\cdot \frac{|pos^j_i \ in \ time_r|}{R_{f_i}}
@@ -118,6 +119,17 @@ Potential comment targets mapping dictionary $A$, $P$\\
 \begin{equation}
     SentimentNeg^j_i (time_r) = 10\cdot \frac{|neg^j_i \ in \ time_r|}{R_{f_i}}
 \end{equation}
+
+\par Actor-level sentiment are shown figure \ref{fig:sentiment} below. a) shows the change of sentiment in one movie life period which indicates what attract people. b) shows the average sentiment of a specific actor which indicates highest moments and lowest moment of an actor career
+
+\begin{figure}[!htbp]
+\centering
+\subfloat[Period Sentiment Trend: Change of sentiment in a specific film]{\includegraphics[width=\columnwidth]{sentiment_1.eps}}
+\hfill
+\subfloat[Dynamic Sentiment on Leader Creator : General sentiment transform of an actor in past five years]{\includegraphics[width=\columnwidth]{sentiment_2.eps}}
+\caption{Film-level sentiment trend analyse of different time period. a) shows the change of sentiment in one film life period which indicates what attract people. b) shows the average sentiment of a specific actor which indicates highest moments and lowest moment of an actor career }
+\label{fig:sentiment}
+\end{figure}
 
 \par Dynamic sentiment on leader creator shows how people transform their attention from different targets in movies. We pick out most interesting part (actor) from them and label it the main factor which mainly contribute to the box-office of specific film. The trend analyse is shown in Figure \ref{fig:sentiment}.
 
@@ -144,11 +156,8 @@ where
 
 \begin{figure}[!htbp]
 \centering
-\subfloat[Period Sentiment Trend: Change of sentiment in a specific film]{\includegraphics[width=\columnwidth]{sentiment_1.eps}}
-\hfill
-\subfloat[Dynamic Sentiment on Leader Creator : General sentiment transform of an actor in past five years]{\includegraphics[width=\columnwidth]{sentiment_2.eps}}
-\caption{Film-level sentiment trend analyse of different time period. a) shows the change of sentiment in one film life period which indicates what attract people. b) shows the average sentiment of a specific actor which indicates highest moments and lowest moment of an actor career }
-\label{fig:sentiment}
+\includegraphics[width=0.8\columnwidth]{case3.png}
+\caption{Film trend of Kung Fu Yoga}
+\label{fig:case3}
 \end{figure}
-
 

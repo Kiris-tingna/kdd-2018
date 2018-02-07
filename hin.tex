@@ -60,7 +60,7 @@ $K$ clusters of actors $A_i$ and rank of actor in each cluster \\
 \end{algorithm}
 
 
-\subsection{Alternative Actors}
+\subsection{Constrained Alternative Actors}
 In this section, we discuss method choosing alternative actors for casting agents. The basic idea is measure similarity between actors. Since movie information network has been built, we then introduce meta path-based similarity framework \cite{sun2011pathsim:} for alternative actors. The example is show in table \ref{tab:metapath}.
 
 \begin{table}[!htb]
@@ -86,4 +86,4 @@ Denote actors $a_1$ and $a_2$ then $p_{a_1 \rightsquigarrow a_2}$ is a path inst
   s(a_1,a_2) = \frac{2 \times |\left\{p_{a_1 \rightsquigarrow a_2}: p_{a_1 \rightsquigarrow a_2} \in \mathcal{P} \right\}|}{|\left\{p_{a_1 \rightsquigarrow a_1}: p_{a_1 \rightsquigarrow a_1} \in \mathcal{P} \right\}| + |\left\{p_{a_2 \rightsquigarrow a_2}: p_{a_2 \rightsquigarrow a_2} \in \mathcal{P} \right\}|}
 \end{equation}
 
-Base on this measure of actors, we can not only know similarities but also get multi metrics that reflect how actors link with others. Query a specific actor $a_i$and then return a recommend actor list $r_{a_i}$ that ordered by similarities. Investors can determine the scope of film plan or prepare backup candidate for chief actor. In \system we also analyse different types of meta path instances for providing comprehensive alternative information for other actors.
+Pay attention that A-M-A is not a meta path. It is insignificant find co-star actor as the recommend actor. For example, Andy and Sara co-star $M_1$ and is recommend who is similar to Sara in the case of choose alternative actor for Andy. We use A-M-T-M-A and A-M-D-M-A to find actor similarity among movie types and directors. Another constrain is sex that female actor should recommend female and male the same. Base on this measure of actors, we can not only know similarities but also get multi metrics that reflect how actors link with others. Query a specific actor $a_i$and then return a recommend actor list $r_{a_i}$ that ordered by similarities. Investors can determine the scope of film plan or prepare backup candidate for chief actor. In \system we also analyse different types of meta path instances for providing comprehensive alternative information for other actors.

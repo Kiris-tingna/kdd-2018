@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{00}
+\begin{thebibliography}{32}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -135,8 +135,9 @@
   \bibinfo{person}{Ming Zhou}, {and} \bibinfo{person}{Ke Xu}.}
   \bibinfo{year}{2014}\natexlab{}.
 \newblock \showarticletitle{Adaptive Recursive Neural Network for
-  Target-dependent Twitter Sentiment Classification}.
-\newblock  (\bibinfo{year}{2014}), \bibinfo{pages}{49--54}.
+  Target-dependent Twitter Sentiment Classification}. In
+  \bibinfo{booktitle}{{\em Meeting of the Association for Computational
+  Linguistics}}. \bibinfo{pages}{49--54}.
 \newblock
 
 
@@ -222,8 +223,8 @@
 \bibfield{author}{\bibinfo{person}{Arzoo Katiyar} {and} \bibinfo{person}{Claire
   Cardie}.} \bibinfo{year}{2016}\natexlab{}.
 \newblock \showarticletitle{Investigating LSTMs for Joint Extraction of Opinion
-  Entities and Relations.}
-\newblock  (\bibinfo{year}{2016}), \bibinfo{pages}{919--929}.
+  Entities and Relations}. In \bibinfo{booktitle}{{\em Meeting of the
+  Association for Computational Linguistics}}. \bibinfo{pages}{919--929}.
 \newblock
 
 
@@ -255,10 +256,11 @@
 
 \bibitem[\protect\citeauthoryear{Li and Hovy}{Li and Hovy}{2014}]%
         {li2014sentiment}
-\bibfield{author}{\bibinfo{person}{Jiwei Li} {and} \bibinfo{person}{Eduard~H
+\bibfield{author}{\bibinfo{person}{Jiwei Li} {and} \bibinfo{person}{Eduard
   Hovy}.} \bibinfo{year}{2014}\natexlab{}.
-\newblock \showarticletitle{Sentiment Analysis on the People's Daily}.
-\newblock  (\bibinfo{year}{2014}), \bibinfo{pages}{467--476}.
+\newblock \showarticletitle{Sentiment Analysis on the People's Daily}. In
+  \bibinfo{booktitle}{{\em Conference on Empirical Methods in Natural Language
+  Processing}}. \bibinfo{pages}{467--476}.
 \newblock
 
 
@@ -358,18 +360,6 @@
 \newblock
 
 
-\bibitem[\protect\citeauthoryear{Sun and Han}{Sun and Han}{2013}]%
-        {sun2013meta-path-based}
-\bibfield{author}{\bibinfo{person}{Yizhou Sun} {and} \bibinfo{person}{Jiawei
-  Han}.} \bibinfo{year}{2013}\natexlab{}.
-\newblock \showarticletitle{Meta-Path-Based Search and Mining in Heterogeneous
-  Information Networks}.
-\newblock \bibinfo{journal}{{\em Tsinghua Science \& Technology\/}}
-  \bibinfo{volume}{18}, \bibinfo{number}{4} (\bibinfo{year}{2013}),
-  \bibinfo{pages}{329--338}.
-\newblock
-
-
 \bibitem[\protect\citeauthoryear{Sun, Han, Aggarwal, and Chawla}{Sun
   et~al\mbox{.}}{2012}]%
         {sun2012when}
@@ -390,21 +380,8 @@
   \bibinfo{person}{Tianyi Wu}.} \bibinfo{year}{2011}\natexlab{}.
 \newblock \showarticletitle{Pathsim: Meta path-based top-k similarity search in
   heterogeneous information networks}.
-\newblock \bibinfo{journal}{{\em Proceedings of The Vldb Endowment\/}}
+\newblock \bibinfo{journal}{{\em Proceedings of The VLDB Endowment\/}}
   \bibinfo{volume}{4} (\bibinfo{year}{2011}), \bibinfo{pages}{992--1003}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Sun, Han, Zhao, Yin, Cheng, and Wu}{Sun
-  et~al\mbox{.}}{2009}]%
-        {sun2009rankclus:}
-\bibfield{author}{\bibinfo{person}{Yizhou Sun}, \bibinfo{person}{Jiawei Han},
-  \bibinfo{person}{Peixiang Zhao}, \bibinfo{person}{Zhijun Yin},
-  \bibinfo{person}{Hong Cheng}, {and} \bibinfo{person}{Tianyi Wu}.}
-  \bibinfo{year}{2009}\natexlab{}.
-\newblock \showarticletitle{RankClus: integrating clustering with ranking for
-  heterogeneous information network analysis}.
-\newblock  (\bibinfo{year}{2009}), \bibinfo{pages}{565--576}.
 \newblock
 
 
