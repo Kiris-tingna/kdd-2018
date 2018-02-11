@@ -1,13 +1,8 @@
-This is BibTeX, Version 0.99d (TeX Live 2017)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: film_social_sentiment.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: film_social_sentiment.aux
 The style file: ACM-Reference-Format.bst
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: SRAS.bib
 Warning--I didn't find a database entry for "sun2013meta-path-based"
 Warning--I didn't find a database entry for "sun2009rankclus:"
-Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty publisher in asur2010predicting
 Warning--empty address in asur2010predicting
 Warning--empty publisher in diao2014jointly
@@ -29,45 +24,4 @@ Warning--page numbers missing in both pages and numpages fields in tang2015targe
 Warning--empty publisher in tang2015user
 Warning--empty address in tang2015user
 Warning--empty address in witten2016data
-You've used 32 entries,
-            5706 wiz_defined-function locations,
-            1496 strings with 21267 characters,
-and the built_in function-call counts, 37626 in all, are:
-= -- 5424
-> -- 1379
-< -- 0
-+ -- 423
-- -- 464
-* -- 2573
-:= -- 3768
-add.period$ -- 161
-call.type$ -- 32
-change.case$ -- 223
-chr.to.int$ -- 31
-cite$ -- 53
-duplicate$ -- 2891
-empty$ -- 2130
-format.name$ -- 575
-if$ -- 9659
-int.to.chr$ -- 2
-int.to.str$ -- 0
-missing$ -- 133
-newline$ -- 289
-num.names$ -- 255
-pop$ -- 1254
-preamble$ -- 1
-purify$ -- 382
-quote$ -- 0
-skip$ -- 1038
-stack$ -- 0
-substring$ -- 2709
-swap$ -- 316
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 603
-warning$ -- 21
-while$ -- 260
-width$ -- 0
-write$ -- 577
 (There were 23 warnings)
